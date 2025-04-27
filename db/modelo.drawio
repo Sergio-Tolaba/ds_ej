@@ -44,8 +44,22 @@
         <mxCell id="oGvwPSa7rUXXweESWLWe-11" value="(0.N)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="340" y="90" width="60" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="oGvwPSa7rUXXweESWLWe-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="oGvwPSa7rUXXweESWLWe-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="oGvwPSa7rUXXweESWLWe-15" value="Contiene" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="480" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="oGvwPSa7rUXXweESWLWe-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.7;entryY=0.75;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="oGvwPSa7rUXXweESWLWe-15" target="oGvwPSa7rUXXweESWLWe-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="oGvwPSa7rUXXweESWLWe-18" value="(1.N)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="570" y="160" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="oGvwPSa7rUXXweESWLWe-19" value="(1.N)" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="260" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
