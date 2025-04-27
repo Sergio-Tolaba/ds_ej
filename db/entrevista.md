@@ -5,7 +5,7 @@
     celeste]{.underline}]{.mark}*
 
 Queremos recolectar los datos personales de nuestros
-**[clientes]{.mark}**, saber si es Persona Natural o Jurídica. En el
+**clientes**, saber si es Persona Natural o Jurídica. En el
 caso de persona natural, queremos su RUT y DNI, y en caso de que sea
 persona jurídica, queremos su NIT, y RUES. Adicionalmente, queremos
 recolectar y almacenar su nombre, dirección, teléfono e e-mail.
@@ -16,7 +16,7 @@ asociada a ellos como el título, categoría, ISBN (International Standard
 Book Number), año de publicación, valor, la casa editorial que hizo la
 publicación, y también el autor/a de la obra.
 
-Los libros son provistos por la **[editorial.]{.mark}** Necesitamos
+Los libros son provistos por la **editorial** Necesitamos
 tener el número de teléfono de la editorial (como máximo 2 números de
 teléfono), el nombre de contacto y el e-mail.
 
