@@ -234,6 +234,182 @@ Por otro lado, el DER es la representación gráfica del MER, es decir, la mater
 Se menciona que el equipo utilizará la herramienta online diagrams.net para elaborar el diagrama, basándose en la información obtenida de una entrevista con los directivos del Club del Libro. Finalmente, se destaca la importancia de comprender el concepto de entidad antes de avanzar en el proyecto de la base de datos.
 
 ¿Te gustaría profundizar en algún aspecto específico de esta clase?
+//////////////////////////////////////////////////////////////////////////////////////////////
+07
+Diferencia entre MER y DER
+ Siguiente pregunta
+
+El Modelo Entidad-Relación (MER) y el Diagrama Entidad-Relación (DER) son etapas utilizadas en el modelaje de banco de datos. A pesar de tener nombres parecidos, cada uno ejerce una función diferente en este proceso.
+
+Escoge la alternativa que diferencia las características del MER y del DER:
+
+Alternativa correta
+El MER es un diagrama que facilita la comunicación entre los integrantes del equipo, pues ofrece un lenguaje común utilizado tanto por las personas analistas, como por los desarrolladores. Ya el DER representa, de forma abstracta, la estructura que va a poseer el banco de datos de la aplicación.
+
+
+Alternativa correta
+El DER es un modelo conceptual usado para describir los objetos (entidades) con sus características (atributos) y cómo ellas se relacionan entre sí (relaciones). El MER es una representación gráfica que ayuda a visualizar la información en situaciones prácticas.
+
+
+Alternativa correta
+El DER y el MER son modelos conceptuales usados para describir los objetos (entidades) con sus características (atributos) y cómo ellas se relacionan entre sí (relaciones). Ellos también pueden ser utilizados para realizar la representación gráfica del modelo.
+
+
+Alternativa correta
+El MER es un modelo conceptual usado para describir los objetos (entidades) con sus características (atributos) y cómo estas se relacionan entre sí (relaciones). En cuanto que el DER es una representación gráfica que ayuda a visualizar la información en situaciones prácticas.
+
+
+Mientras que MER es un modelo conceptual, el DER es su representación gráfica y principal herramienta.
+************************************************************************************
+08
+Haga lo que hicimos en aula
+ Siguiente pregunta
+
+Ahora que ya aprendiste cómo construir un mini mundo y recopilar los datos con las entrevistas, coloca en práctica estos conceptos en un proyecto personal o en una situación del día a día.
+
+¿Cómo imaginas el mini mundo en la empresa en que trabajas? ¿Qué preguntas realizarías al entrevistar colegas de trabajo para modelar un banco de datos para tu empresa?
+
+Adicionalmente, recuerda que puedes aplicar estos conceptos en diversas situaciones de tu vida.
+****************************************************************************************
+09
+Lo que aprendimos
+ Siguiente pregunta
+
+Lo que aprendimos en esta aula:
+
+Aplicar el concepto de mini mundo.
+Desarrollar el proceso de abstracción.
+Explicar la importancia de las entrevistas.
+Diferenciar el Modelo Entidad-Relación (MER) del Diagrama Entidade-Relación (DER).
+************************************************************************************************
+***********************************************************************************************
+03. Entidades
+01
+Qué son entidades= es un objeto único(individuo o conjunto de individuos) en el mundo real(cosa-persona) Ej Clientes,Productos vendidos,Dpto Ventas,Vendedores
+Caracterísiticas de la Entidad= Abstracta(dpto.Vtas) o Tangible(Productos vendidos) = RECTÁNGULO, así la representamos gráficamente
+Ingresé a diagrams.net y la conecté con Github=> modelo.drawio       
+
+~ https://app.diagrams.net/?src=about#HSergio-Tolaba%2Fds_ej%2Fmain%2Fmodelo.drawio#%7B%22pageId%22%3A%22XmCBVa2G_iUfFZYH8Ntg%22%7D
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+ 02 Identificando las entidades
+ Siguiente pregunta
+
+Imagina un escenario ficticio en el que fuimos contratados por una floristería que necesita un sistema para el control de ventas. Inicialmente, será almacenada la información de cada cliente, tales como: Nombre, dirección, fecha de nacimiento y edad. En cuanto a cada producto, almacenaremos la descripción, cantidad en inventario y el precio. En esta floristería también existen las personas colaboradoras, que tienen nombre, dirección, salario y cargo.
+
+Escoge la alternativa que indica cuáles son las entidades presentes en el proyecto de la floristería.
+
+Alternativa correta
+Clientes, Producto y Colaborador(a).
+
+
+Estas son las entidades del proyecto de la floristería. Cada una de ellas posee atributos que las describen como, por ejemplo, el atributo precio, de la entidad producto.
+
+Alternativa correta
+Cargo, Nombre y Colaborador(a).
+
+
+Alternativa correta
+Floristería, Clientes y Producto.
+
+
+Alternativa correta
+Edad, Producto y Colaborador(a).
+***********************************************************************************************************************
+03 Entidad fuerte vs débil
+¡Claro! Vamos a utilizar una analogía para entender mejor la diferencia entre entidades fuertes y débiles.
+
+Imagina que estamos en una fiesta. En esta fiesta, hay personas que son los "invitados" y hay "acompañantes" de esos invitados.
+
+Los "invitados" son como las entidades fuertes. Ellos pueden estar en la fiesta por sí mismos, sin necesidad de que alguien más esté con ellos. Pueden disfrutar de la música, bailar y socializar sin depender de nadie. Por ejemplo, si Juan llega a la fiesta solo, él es un invitado fuerte porque no necesita a nadie más para estar presente.
+
+Por otro lado, los "acompañantes" son como las entidades débiles. Ellos solo pueden estar en la fiesta si hay un invitado que los traiga. Por ejemplo, si María llega con su amiga Ana, Ana es un acompañante y depende de María para estar en la fiesta. Si María no estuviera, Ana no podría asistir por sí sola.
+
+En resumen, los invitados (entidades fuertes) pueden existir independientemente, mientras que los acompañantes (entidades débiles) dependen de la presencia de un invitado para existir en ese contexto.
+
+Espero que esta analogía te ayude a visualizar mejor la diferencia entre las entidades fuertes y débiles. Si tienes más preguntas o necesitas más ejemplos, ¡no dudes en preguntar!
+
+Copiar texto de Luri al portapapeles
+////////////////////////////////////////////////////////////////////////////////////////////////
+ 04 Características de las entidades
+ Siguiente pregunta
+
+Las entidades son objetos únicos del mundo real que pueden ser físicos o conceptuales. Al presentar estos conceptos sobre entidad a su equipo, Martha informó que existen dos tipos: Las entidades fuertes y las entidades débiles.
+
+Escoge las alternativas que describen estas entidades.
+
+Alternativa correta
+La entidad fuerte depende de una entidad fuerte. Una entidad débil depende de otra entidad débil, o sea, de su entidad propietaria.
+
+
+Alternativa correta
+Una entidad fuerte siempre tiene la clave principal en el conjunto de atributos que describe la entidad fuerte. La entidad débil no posee la clave principal, pero tiene una clave parcial que discrimina de manera única a las entidades débiles.
+
+
+La entidad fuerte, por sí sola, posee un atributo que podrá ser utilizado como clave principal. Ya la entidad débil posee una clave compuesta formada a partir de la clave principal de la entidad fuerte y clave parcial de la entidad débil.
+
+Alternativa correta
+Una entidad fuerte siempre posee una clave principal que discrimina de manera única a la entidad. La entidad débil no posee ningún tipo de clave que ayude a discriminarla de forma única.
+
+
+Alternativa correta
+La entidad fuerte no depende de la existencia de cualquier otra entidad en un esquema. Una entidad débil es aquella que depende de su entidad propietaria, o sea, una entidad fuerte para su existencia.
+
+
+Una entidad fuerte tiene existencia propia, que no depende de otra entidad para existir. Ya la entidad débil no posee existencia propia, dado que su existencia depende de otra entidad.
+
+¡Enhorabuena, has acertado!
+ Discutir en el Foro
+ Siguiente pregunta
+***********************************************************************************************************
+05
+Entidades en el DER = analizamos la Encuesta..docx 1)Identifico Entidad fuerte y debil
+En esta clase, se aborda el concepto de entidades en el contexto del modelado de bases de datos. Se explican dos tipos de entidades: las entidades fuertes, que son independientes y no dependen de otras entidades, y las entidades débiles, que dependen de otra entidad para su existencia.
+
+A través de un ejemplo práctico, se identifican varias entidades en un texto relacionado con una e-commerce. Las entidades mencionadas son: clientes, libros, editorial, pedido de compra e inventario. Se destaca la importancia de reconocer estas entidades, ya que son fundamentales para la creación de un diagrama de entidad-relación.
+
+Además, se menciona que una forma de identificar una entidad es a través de su naturaleza sustantiva. La clase concluye con la intención de establecer estas entidades en un diagrama de entidad-relación, preparando el camino para un análisis más profundo en las próximas lecciones.
+*************************************************************************************************************
+06 Entidades fuertes y débiles
+En esta clase se aborda la diferencia entre entidades fuertes y débiles en el contexto del modelado de bases de datos. Se explica que las entidades fuertes son aquellas que no dependen de ninguna otra entidad para existir, como los clientes, que pueden registrarse y realizar compras de manera independiente. Por otro lado, las entidades débiles dependen de otras entidades para su existencia, como los libros, que requieren de una editorial para ser publicados, y los pedidos de compra, que necesitan tanto de un cliente como de un libro.
+
+Se destaca que las entidades fuertes se resaltan en amarillo y las débiles en azul. A lo largo de la clase, se identifican ejemplos específicos de cada tipo de entidad y se comienza a graficar un diagrama que incluye las entidades clientes y editorial como fuertes, y libros, pedidos de compra e inventario como débiles. Finalmente, se menciona que en la próxima clase se discutirá cómo se relacionan estas entidades entre sí.
+Cliente no depende de nadie, entra al negocio y puede comprar o sólo mirar
+Libros, están en el e-comer pero de dónde vienen de una Editorial, todos dependen de la existencia de las editoriales (fuerte: Cliente, Editorial)
+Pedido de un libro, de dónde viene del Cliente y también de la existencia del libro y este de la exitencia de la editorial y del autor
+Inventario, se refiere a la existencia o stock de libros, hay una dependencia
+**************************************************************************************************************+
+ 07 Haga lo que hicimos en aula
+ Siguiente pregunta
+
+Llegó la hora de que sigas todos los pasos realizados por mí durante las video aulas. Si ya lo hiciste, ¡Te felicito! Si no lo has hecho, recuerda que para poder avanzar a la siguiente aula debes reproducir lo que aprendiste hasta aquí.
+
+Durante el aula 2, pensaste en un proyecto o situación del día a día para crear un mini mundo. Ahora, utiliza este proyecto para diseñar, en diagrams.net, las entidades existentes, clasificándolas como entidades fuertes y débiles.
+********************************************************************
+08
+Lo que aprendimos
+ Siguiente pregunta
+
+Lo que aprendimos en esta aula:
+
+Identificar los tipos de entidades.
+Diferenciar las entidades fuertes de las entidades débiles.
+Representar las entidades en diagrams.net.
+****************************************************************************************************+
+04. Diagrama Entidad-Relación (DER) Las relaciones se representan gráficamente con un ROMBO y muestra una acción  es un verbo(Entidad es un sustantivo)
+En esta clase, se aborda la importancia de entender las reglas del negocio al modelar una base de datos, específicamente en el contexto de un e-commerce como el Club del Libro. Se enfatiza la necesidad de que el equipo de modelado se alinee con el cliente para comprender cómo funciona el negocio y cómo se realizarán las transacciones.
+
+Se introduce el concepto de relaciones entre entidades en un diagrama entidad-relación, que se representan mediante un rombo. Se explican diferentes tipos de relaciones:
+
+Relación binaria: conecta dos entidades.
+Relación ternaria: involucra tres entidades.
+Relación N-aria: incluye más de tres entidades.
+Finalmente, se menciona que se explorará el concepto de cardinalidad en las próximas clases, que se refiere a cómo las entidades se relacionan entre sí.
+
+
+
+	
+
 
 
 
