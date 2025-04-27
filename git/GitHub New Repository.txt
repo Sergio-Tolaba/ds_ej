@@ -1,0 +1,29 @@
+GitHub New Repository
+or create a new repository on the command line
+	
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Sergio-Tolaba/ver.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/Sergio-Tolaba/Data_Science.git
+git branch -M main
+git push -u origin main
+
+
+git remote add origin https://github.com/Sergio-Tolaba/ej_ds
+
+Desde mi rama:
+git switch main (git -v >= 2.23) o git viejo=> git chekout rama
+
+git branch => *main
+               node-ser
+git switch node-ser
+
+****************************
+GitHub, crear carpeta desde + create file = c4/.gitkeep
+
+
+  

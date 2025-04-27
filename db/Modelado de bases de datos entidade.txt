@@ -1,0 +1,243 @@
+ Modelado de bases de datos: entidades, relaciones y atributos
+01.Base de datos: 
+01 Presentacion: Modelo conceptual, Modelo y Diagrama Entidad-Relación, Entidades y tipos, Relaciones y tipos, Cardinalidad, Atributos y tipos
+En esta clase de introducción al curso de modelado de bases de datos, el instructor Álvaro Camacho presenta los conceptos fundamentales que se abordarán. Se enfocará en el modelo conceptual de una base de datos, comenzando por la elaboración de un esquema hasta llegar a un diagrama entidad-relación.
+
+Se discutirán las diversas entidades y tipos de entidades que pueden existir en una base de datos, así como las relaciones y tipos de relaciones que se pueden establecer entre ellas, incluyendo la cardinalidad. Además, se explorará cómo las entidades se componen de atributos y se verán diferentes tipos de atributos.
+
+El curso utilizará la herramienta en línea diagrams.net para crear diagramas entidad-relación, lo que será el primer paso antes de trabajar con un sistema de gestión de bases de datos. El instructor invita a los estudiantes a acompañarlo en este proceso de aprendizaje.
+**********************************************************************************************************************
+02
+Conoce a Luri, nuestra IA
+Siguiente pregunta
+
+¡Hola estudiante! ¿Sabías que tienes acceso a Luri, nuestra IA para ayudarte en todo momento con tus dudas? Está disponible en todos los cursos de la plataforma, presente en la parte inferior de la pantalla.Ingrese aquí la descripción de esta imagen para ayudar con la accesibilidad
+
+A continuación te damos algunos consejos para que Luri pueda ayudarte aún más en tu viaje.
+
+   Principales usos del Luri
+
+Propósito	Cómo preguntar
+Resumir clases	"Haz un resumen de esta clase".
+Sugerir ejercicios	"Sugerir ejercicios basados ​​en esta clase."
+Ayuda con códigos	"El siguiente código tiene un error: [tu código aquí]".
+Preguntas detalladas	"Explícame nuevamente este [concepto], dando otros ejemplos".
+Revisión del ejercicio	"Corrige mi solución para este ejercicio: [tu solución aquí]".
+❌ ¿Cuándo NO usar Luri?
+
+Soporte para la plataforma: Luri no está capacitada para ayudarte con el soporte en la plataforma. En estos casos, recomendamos contactar con nuestro equipo de soporte, quienes siempre están disponibles para ayudarte.
+
+Temas Fuera de Contexto: Tus preguntas deben estar relacionadas con el tema del curso en el que se realizan. Ej.: Hacer una pregunta de Java en un curso de React puede no generar un buen resultado.
+
+Preguntas que no sean técnicas: Para preguntas del tipo: qué opciones de carrera puedes seguir, para estos casos elige otros canales como foros o Discord.
+
+  ¿Cómo obtener buenas respuestas?
+
+Se claro. Tu pregunta debe ser detallada:
+
+❌ "Error IndexOutOfBoundsException"
+✅ "Luri, seguí el código de la clase y tuve un error en IndexOutOfBoundsException."
+Guía la respuesta. Dígale a Luri el tipo de respuesta que espera: Si le gustan las respuestas más cortas, agregue "Sea conciso". Si le gustan las analogías, inserte "Usar analogías cotidianas". La idea es que Luri pueda adaptarse a tu forma favorita de aprender.
+
+Si tienes más dudas, puedes ver nuestra página con información más detallada en: Conoce a Luri, nuestra Inteligencia Artificial impulsada por ChatGPT
+
+Siguiente pregunta
+**************************************************************************
+02
+El club del libro (Proyecto de Marta especialista en db y los clientes Pedro y todo el equipo: hay que charlar con todos antes de pensar en un software= modelaje)
+En esta clase, se introduce el proyecto del Club del Libro, donde Martha ha sido contratada para estructurar la base de datos de la organización, que está en expansión. Martha se reúne con Pedro, un miembro del equipo de sistemas, para discutir qué tipo de base de datos utilizar, como Oracle o MySQL. Sin embargo, Martha enfatiza la importancia de reunirse primero con el cliente para entender sus necesidades y requisitos antes de elegir un software específico. Se menciona la necesidad de realizar un modelaje o modelo dominio para visualizar y conceptualizar lo que el cliente necesita, y se destaca que el enfoque inicial debe ser comprender el flujo operativo del Club del Libro antes de preocuparse por el Sistema de Gestión de Bases de Datos (SGBD).
+
+Ver como es el flujo operativo del club del libro
+********************************************************************************
+03
+Para saber más: diferencia entre modelos
+ Siguiente pregunta
+
+El modelado de datos es uno de los procesos más importantes al trabajar en un proyecto de base de datos. Durante este proceso, los datos se recopilan, se tratan y se estructuran para crear una base sólida que permita construir una base de datos eficiente.
+
+Además del modelo conceptual, que se utiliza para comprender los requisitos del sistema y explorar las estructuras y conceptos del negocio, también podemos trabajar con otros dos modelos: el lógico y el físico.
+
+El modelo lógico se crea para describir cómo se almacenarán los datos en el sistema, explorando los conceptos del dominio. En este modelo se definen las entidades, los atributos, las claves principales y foráneas, así como sus relaciones.
+
+Por otro lado, el modelo físico se utiliza para describir las tablas, sus columnas y relaciones. A diferencia del modelo lógico, este modelo emplea un lenguaje específico para su representación: SQL, el lenguaje utilizado para trabajar con bases de datos relacionales.
+
+ Discutir en el Foro
+ Si
+*******************************************************************************************************
+04 Entendiendo SGBD
+En esta clase, se aborda el concepto de Sistema de Gestión de Base de Datos (SGBD) y su importancia en el modelado de bases de datos. Martha y su equipo discuten la necesidad de entender la estructura del negocio antes de elegir un SGBD, como Oracle o MySQL, para asegurarse de que la base de datos sea funcional y se ajuste a la realidad del negocio.
+
+Se enfatiza que el SGBD es el software que permite realizar acciones como alterar, excluir, incluir y consultar datos en la base de datos. Además, se menciona la diferencia entre el lenguaje de alto nivel, que se refiere a la comunicación cotidiana y el modelaje conceptual, y el lenguaje de bajo nivel, que es el que utilizan las máquinas.
+
+La clase concluye con la idea de que, en esta fase, el enfoque debe estar más en el modelado conceptual que en el SGBD en sí, preparando al equipo para los próximos pasos en el desarrollo de su base de datos.
+**********************************************************
+05
+Alto y bajo nivel
+ Siguiente pregunta
+
+Durante el desarrollo del proceso de modelaje y elección de los modelos que serán utilizados, Martha comentó con Pedro sobre los modelos de alto y bajo nivel y citó algunos ejemplos.
+
+Pensando en ello, selecciona, entre las siguientes opciones, la que mejor describe las características de los modelos de alto y bajo nivel con sus respectivos ejemplos.
+
+Alternativa correta
+El modelo de alto nivel es más cercano del lenguaje del usuario. Entretanto, el de bajo nivel es más cercano al lenguaje de máquina. El modelo conceptual, por ejemplo, es un modelo de bajo nivel y los modelos físicos son considerados de alto nivel.
+
+
+Alternativa correta
+El modelo de alto nivel es considerado superior a uno de bajo nivel. Los modelos físicos, por ejemplo, son considerados de alto nivel.
+
+
+Alternativa correta
+El modelo de alto nivel es más cercano al lenguaje humano. Ya el modelo de bajo nivel es más cercano al lenguaje de la máquina. El modelo conceptual, por ejemplo, es un modelo de alto nivel y los modelos físicos son considerados de bajo nivel.
+
+
+Un ejemplo de modelo de alto nivel conceptual es la representación de la estructura del banco de datos a través de formas geométricas. Un ejemplo de modelo de bajo nivel físico es la creación de un proyecto para la estructuración del banco de datos a través de comandos que serán interpretados por la máquina.
+
+Alternativa correta
+El modelo de alto nivel es considerado más complejo para trabajar. Por el contrario, un modelo de bajo nivel es más simple. El modelo conceptual, por ejemplo, es un modelo de bajo nivel.
+**********************************************************************************************
+06 Escogiendo la aplicación
+En esta clase, se aborda la importancia de crear un modelo conceptual para una base de datos. Se menciona que el equipo, al escuchar la necesidad de este modelo, se preguntó si podían utilizar cualquier software para graficar, como PowerPoint o Paint. La respuesta fue afirmativa, pero se sugiere que es mejor utilizar un software especializado para facilitar la conversión del modelo conceptual a un modelo lógico en el futuro.
+
+Se presenta diagrams.net como una herramienta online gratuita y potente que se utilizará para trabajar en el modelado del esquema de la base de datos. La clase concluye con la invitación a acceder a este software y seguir el proceso en el próximo video.
+**************************************************************************************
+07
+Para saber más: herramientas para el modelaje
+ Siguiente pregunta
+
+Es posible aplicar las técnicas de modelaje sin el uso de una herramienta CASE (Computer-Aided Software Engineering, o Ingeniería de Software Asistida por Computador), pero este trabajo manual sería bastante extenso. Además, la conversión del esquema conceptual al esquema lógico (rediseñando las formas, por ejemplo), puede tornar el trabajo exhaustivo y estresante. Al emplear una herramienta CASE logramos observar las alteraciones del modelo, conforme vamos tomando las decisiones (proceso “causa-efecto”).
+
+Pero, ¿Será que existe una herramienta CASE ideal?
+
+Una herramienta CASE necesita tener la capacidad de utilizar diversas formas geométricas para: desarrollar una buena representación visual, el diccionario de datos, la integración entre el diagrama entidad-relación y el diccionario de datos, además de posibilitar una mínima interacción con el usuario.
+
+Existen varias herramientas avanzadas disponibles en el mercado que pueden auxiliar el modelaje del banco de datos. Algunas de las más conocidas son:
+
+OracleDesigner ™ (Oracle ®): Posee una arquitectura flexible y puede ser instalada en múltiples plataformas;
+PowerDesigner ™ (Sybase ®): Es uno de los más utilizados en el mercado;
+ERWin (CA ®): Muy utilizado en el mercado, también;
+Freeware DBDesigner: Posee una gran cantidad de recursos también;
+PyDesigner: Disponible para la plataforma Linux;
+VISIO ™ (Microsoft ®): Herramienta con enfoque exclusivo para el diseño.
+Durante nuestro entrenamiento utilizaremos diagrams.net, ¿pero qué motivó esta elección? Esta herramienta posee las siguientes ventajas:
+
+Permite realizar alteraciones estructurales al modelo, a medida que el analista toma nuevas decisiones;
+Dar especial atención a los atributos y a todas sus especificaciones;
+Posibilitar una visualización más “limpia” del esquema al ocultar los atributos que no tengan relevancia en el modelo conceptual, pero que sí importan en el modelo lógico, por ejemplo;
+Posee un diccionario de datos muy completo.
+ Discutir en el Foro
+**********************************************************************************************************************+
+08
+Usando diagrams.net
+
+~ https://app.diagrams.net/?src=about
+
+En esta clase, se presenta la herramienta diagrams.net, que es gratuita y se utiliza para crear esquemas de modelado de bases de datos. Martha y su equipo discuten la necesidad de un software para generar diagramas y deciden usar esta herramienta. Se explica cómo acceder a diagrams.net sin necesidad de registrarse, y se muestran las opciones de almacenamiento, como Google Drive, OneDrive, Dropbox, entre otros.
+
+Se menciona la posibilidad de renombrar el diagrama y cambiar el idioma de la interfaz a español. Luego, se destaca la importancia de enfocarse en las herramientas específicas para crear diagramas de entidad-relación, eliminando otras opciones que no son necesarias. Finalmente, se invita a los estudiantes a familiarizarse con la herramienta antes de profundizar en el modelo conceptual en la próxima clase.
+
+Si tienes alguna pregunta específica sobre el contenido o necesitas más detalles, ¡estaré encantado de ayudarte!
+******************************************************************************+
+09
+Haga lo que hicimos en aula
+ Siguiente pregunta
+
+Llegó la hora de que sigas todos los pasos realizados por mí durante las video aulas. Si ya lo hiciste, ¡Te felicito! Si no lo has hecho, recuerda que para poder avanzar a la siguiente aula debes reproducir lo que aprendiste hasta aquí.
+
+Opinión del instructor
+
+Aprovecha para explorar todas las funcionalidades de la herramienta diagrams.net, probando sus recursos y generando algunos modelos. ¡No olvides compartir tu progreso en el foro del curso!
+**********************************************************************************+
+10
+Lo que aprendimos
+ Siguiente pregunta
+
+Lo que aprendimos en esta aula:
+
+Identificar un modelo lógico de datos y un modelo físico de datos.
+Diferenciar un modelo de alto nivel de un modelo de bajo nivel.
+Entender qué son los SGBDs.
+Aplicar las técnicas de modelaje utilizando una herramienta CASE.
+************************************************************************************************************
+*************************************************************************************************************
+02. Modelo Entidad-Relación
+En esta clase, se introduce el concepto de "mini-mundo", que se refiere a un recorte del mundo real que permite analizar una porción específica de datos de manera detallada. Se enfatiza la importancia de entender bien este mini-mundo para poder realizar una abstracción efectiva, que es un proceso mental que permite aislar aspectos específicos de un conjunto más complejo, facilitando su análisis.
+
+Se discute cómo la abstracción permite ignorar ciertos detalles y enfocarse en lo esencial, utilizando ejemplos como la descripción de un caballo y la programación de un día en una agenda. Además, se presentan entidades como clientes, libros y autores en el contexto de una base de datos relacional, destacando la importancia de las relaciones entre estas entidades. Se concluye que el objetivo es establecer relaciones entre las entidades para construir una base de datos relacional, que será el foco del curso.
+(Carlos es el Cliente en el e-commers de libros= COMPRA | Tenemos los LIBROS | Victoria es AUTOR, qué hace: escribe los libros )=> Relaciones entre Entidades
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+02
+¿Qué es el mini-mundo?
+ Siguiente pregunta
+
+Durante la entrevista con las directivas, Martha realizó varias preguntas y recolectó información muy importante sobre el negocio para realizar la construcción del mini-mundo. Pero, algunos integrantes del equipo nunca oyeron hablar sobre ello y les gustaría entender mejor lo que este concepto abarca.
+
+Selecciona la alternativa que describe el concepto de mini-mundo.
+
+Alternativa correta
+Es una herramienta utilizada para gestionar los datos.
+
+
+Alternativa correta
+Es una parte del banco de datos usada para almacenar la estructura del negocio.
+
+
+Alternativa correta
+Es un modelo lógico utilizado en el proceso de modelaje de datos.
+
+
+Alternativa correta
+Representación de la estructura del negocio, reflejando recortes del mundo real.
+
+
+El mini-mundo es considerado una de las etapas más importantes del proceso de modelaje de los datos, pues, a través de esta etapa, entendemos cómo el banco de datos será estructurado.
+
+¡Enhorabuena, has acertado!
+ Discutir en el Foro
+ Siguiente pregunta
+******************************************************************************************************+
+03
+Preparando el ambiente: accediendo al archivo del aula
+ Siguiente pregunta
+
+En el siguiente documento encontrarás el resumen de la entrevista que realizó Martha a los directores del Club del Libro.
+*****************************************************************************************
+04
+Entrevista con los directores
+Análisis del resumen descargado en db= Entrevista+Club+del+libro+-+Resumen.docx (haremos la abstracción la info que necesitamos para modelar la db)
+En esta clase, se aborda la recolección de requisitos para el modelado de una base de datos en el contexto del Club del Libro. Martha, tras reunirse con la directiva, elaboró un informe que detalla la información necesaria para la base de datos.
+
+Se identifican dos tipos de clientes: personas naturales (individuos) y personas jurídicas (empresas), con diferentes datos requeridos para cada uno. Para las personas naturales, se necesita el registro único tributario y el documento nacional de identificación, mientras que para las personas jurídicas, se requiere el número de identificación tributaria y el registro único de empresa. Además, se deben almacenar el nombre, dirección, teléfono y email de los clientes.
+
+El producto principal son los libros, para los cuales se debe recolectar información como el título, categoría, código ISBN, año de publicación, valor, casa editorial y autor. Se enfatiza que cada libro es exclusivo de una editorial y que los clientes pueden realizar pedidos de compra, pero es crucial verificar la disponibilidad en el inventario antes de completar la venta.
+
+Este resumen proporciona una base para comenzar a modelar la base de datos, que se desarrollará en las siguientes clases.
+*******************************************************
+05
+Para saber más: la importancia de las entrevistas
+ Siguiente pregunta
+
+El modelado de datos es la base para lograr un buen proyecto final del banco de datos. Una de las etapas más importantes de este proceso es la entrevista con los(as) clientes, en la cual serán identificadas las reglas de negocio del proyecto. Cuando no identificamos las necesidades del proyecto, puede presentarse la necesidad de realizar esta etapa nuevamente, generando así, retrasos en todo el proceso.
+
+La entrevista dará toda la dirección a nuestro proyecto. A través de ella, conocemos todos los detalles del negocio y podemos estructurar los próximos pasos. Un factor importante de este proceso es saber de quién vamos a recopilar la información, o sea, debemos entrevistar a una o a más personas que puedan brindarnos todos los detalles importantes del negocio.
+
+Otro factor es escoger las preguntas ideales para definir todos los puntos clave del proyecto. En esta etapa, la persona que realiza la entrevista necesita tener un conocimiento previo sobre los puntos más relevantes para la construcción del proyecto, lo que posibilita recolectar la información realmente esencial para el modelado del banco de datos.
+
+En resumen, la entrevista es la base para construir un proyecto coherente que atienda las necesidades del cliente.
+********************************************************************************
+06
+MER y DER
+En esta clase, se introducen los conceptos de Modelo Entidad-Relación (MER) y Diagrama Entidad-Relación (DER). El MER es un modelo conceptual abstracto que describe los objetos (entidades), sus características (atributos) y cómo se relacionan entre sí. Es importante entender que el MER es una representación teórica que ayuda a planificar la estructura de una base de datos.
+
+Por otro lado, el DER es la representación gráfica del MER, es decir, la materialización de ese modelo abstracto. El DER facilita la comunicación entre los miembros del equipo que trabajan en la base de datos, ya que permite visualizar de manera clara las relaciones entre las diversas entidades.
+
+Se menciona que el equipo utilizará la herramienta online diagrams.net para elaborar el diagrama, basándose en la información obtenida de una entrevista con los directivos del Club del Libro. Finalmente, se destaca la importancia de comprender el concepto de entidad antes de avanzar en el proyecto de la base de datos.
+
+¿Te gustaría profundizar en algún aspecto específico de esta clase?
+
+
+
+
+
+
+

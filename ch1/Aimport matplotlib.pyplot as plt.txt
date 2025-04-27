@@ -1,0 +1,38 @@
+import matplotlib.pyplot as plt
+
+# Datos (basados en tu análisis anterior)
+tiendas = ['Tienda 1', 'Tienda 2', 'Tienda 3', 'Tienda 4']
+ingresos = [1150880400, 1116343500, 1098019600, 1038375700]
+calificaciones = [3.98, 4.04, 4.05, 4.00]
+costos_envio = [26018.61, 25216.24, 24805.68, 23459.46]
+
+# ---------------------------------
+# Gráfico 1: Barras de ingresos
+plt.figure(figsize=(8,5))
+plt.bar(tiendas, ingresos, color='skyblue')
+plt.title('Ingresos Totales por Tienda')
+plt.xlabel('Tiendas')
+plt.ylabel('Ingresos ($)')
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+plt.show()
+
+# ---------------------------------
+# Gráfico 2: Línea de calificaciones promedio
+plt.figure(figsize=(8,5))
+plt.plot(tiendas, calificaciones, marker='o', color='green')
+plt.title('Calificación Promedio por Tienda')
+plt.xlabel('Tiendas')
+plt.ylabel('Calificación')
+plt.ylim(3.8, 4.1)  # para mejor visualización
+plt.grid(True, linestyle='--', alpha=0.7)
+plt.show()
+
+# ---------------------------------
+# Gráfico 3: Dispersión de costo de envío promedio
+plt.figure(figsize=(8,5))
+plt.scatter(tiendas, costos_envio, color='red')
+plt.title('Costo de Envío Promedio por Tienda')
+plt.xlabel('Tiendas')
+plt.ylabel('Costo de Envío ($)')
+plt.grid(True, linestyle='--', alpha=0.7)
+plt.show()

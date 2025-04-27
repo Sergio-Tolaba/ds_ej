@@ -1,0 +1,30 @@
+Conclusión para tomar la decisión
+📉 Tienda 4 tiene los menores ingresos totales.
+
+⭐ Su calificación promedio es aceptable (4.00), pero inferior a la Tienda 2 y 3.
+
+📦 Tiene el costo de envío más bajo, pero esto no compensa la baja performance en ventas.
+
+⚖️ La variedad de productos vendidos no destaca significativamente.
+
+✅ Recomendación: Vender Tienda 4.
+
+📝 Relatorio – Justificación de venta de Tienda 4
+Relatorio: Decisión de Venta de Tienda
+
+Luego de un análisis comparativo entre las cuatro tiendas en operación, se han evaluado diversos indicadores clave para fundamentar la decisión estratégica de desprendernos de una de ellas.
+
+1. Ingresos Totales:
+Tienda 4 presenta los ingresos más bajos entre todas las tiendas, alcanzando $1.038.375.700. Esta cifra es significativamente menor respecto a Tienda 1, que lidera con más de $1.150 millones, representando una diferencia de más de $112 millones.
+
+2. Calificación Promedio de Clientes:
+Aunque Tienda 4 mantiene una calificación positiva (4.00), se encuentra por debajo de Tienda 2 (4.04) y Tienda 3 (4.05), indicando un nivel de satisfacción ligeramente menor por parte de los clientes.
+
+3. Costo de Envío Promedio:
+Si bien Tienda 4 tiene el menor costo de envío ($23.459,46), esta ventaja no logra compensar el bajo volumen de ventas. El costo reducido no ha sido un factor determinante para atraer mayor cantidad de clientes o mejorar la rentabilidad general.
+
+4. Comportamiento de Ventas por Producto:
+El producto más vendido en Tienda 4 fue "Cama box" con 62 unidades, mientras que el menos vendido fue "Guitarra eléctrica", apenas con 33 unidades. Este comportamiento sugiere que la tienda no cuenta con un producto ancla que genere un diferencial competitivo claro.
+
+Conclusión:
+Teniendo en cuenta la baja rentabilidad relativa, una calificación menor respecto a sus competidoras y un desempeño modesto en las ventas de productos, se concluye que Tienda 4 es la candidata óptima para ser vendida. Esta acción permitirá redirigir recursos hacia tiendas más rentables y con mejores indicadores de desempeño.

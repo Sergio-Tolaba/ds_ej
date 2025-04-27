@@ -1,0 +1,37 @@
+import matplotlib.pyplot as plt
+
+# Datos ya analizados
+tiendas = ["Tienda 1", "Tienda 2", "Tienda 3", "Tienda 4"]
+ingresos = [1150880400, 1116343500, 1098019600, 1038375700]
+costos_envio = [26018.61, 25216.24, 24805.68, 23459.46]
+calificaciones = [3.98, 4.04, 4.05, 4.00]
+
+# ---------------------------------------------
+# 1. Gráfico de Barras - Ingresos por Tienda
+plt.bar(tiendas, ingresos, color="skyblue")
+plt.title("Ingresos por Tienda")
+plt.xlabel("Tiendas")
+plt.ylabel("Ingresos ($)")
+plt.xticks(rotation=45)
+plt.grid(axis='y')
+plt.show()
+
+# ---------------------------------------------
+# 2. Gráfico de Líneas - Costo de Envío Promedio
+plt.plot(tiendas, costos_envio, marker='o', linestyle='-', color="green")
+plt.title("Costo de Envío Promedio por Tienda")
+plt.xlabel("Tiendas")
+plt.ylabel("Costo de Envío ($)")
+plt.grid()
+plt.show()
+
+# ---------------------------------------------
+# 3. Gráfico de Barras - Calificación Promedio
+plt.bar(tiendas, calificaciones, color="orange")
+plt.title("Calificación Promedio de Clientes")
+plt.xlabel("Tiendas")
+plt.ylabel("Calificación (0-5)")
+plt.ylim(3.5, 4.2)
+plt.xticks(rotation=45)
+plt.grid(axis='y')
+plt.show()

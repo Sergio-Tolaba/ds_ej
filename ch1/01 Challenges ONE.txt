@@ -1,0 +1,205 @@
+01 Challenges ONE
+ Siguiente pregunta
+
+¿Cómo estructuramos el aprendizaje?
+Nos basamos en el concepto de Aprendizaje Basado en Desafíos, es decir, un aprendizaje centrado en desafíos que Apple ayudó a crear y que se fundamenta en 3 pilares:
+
+Compromiso:
+Trello y Discord: A través de las tarjetas que recibirás en la herramienta Trello, experimentarás lo que es ser un desarrollador, recibiendo diferentes tareas, algunas muy detalladas, otras no tanto. Podrás resolver tus dudas sobre las posibles soluciones del desafío en el Discord exclusivo para estudiantes de Alura.
+
+Investigar:
+Cursos y formaciones: Nuestros cursos, formaciones y artículos abren muchas posibilidades para que puedas enfrentar el desafío propuesto. Todos estos contenidos forman una guía detallada, pero recuerda que puedes elegir otros caminos y soluciones a la hora de implementar, como en una empresa real.
+
+Actuar
+GitHub y LinkedIn: ¡Ahora es el momento de escribir código! Publica tu proyecto y muéstraselo al mundo. En esta etapa, podrás compartir tu aprendizaje. Hablar y escribir sobre tus experiencias te ayudará a crear una conexión con la comunidad y tus compañeros de estudio.
+********************************************************************************************************************
+02
+Conoce a Luri, nuestra IA
+Siguiente pregunta
+
+¡Hola estudiante! ¿Sabías que tienes acceso a Luri, nuestra IA para ayudarte en todo momento con tus dudas? Está disponible en todos los cursos de la plataforma, presente en la parte inferior de la pantalla.Ingrese aquí la descripción de esta imagen para ayudar con la accesibilidad
+
+A continuación te damos algunos consejos para que Luri pueda ayudarte aún más en tu viaje.
+
+   Principales usos del Luri
+
+Propósito	Cómo preguntar
+Resumir clases	"Haz un resumen de esta clase".
+Sugerir ejercicios	"Sugerir ejercicios basados ​​en esta clase."
+Ayuda con códigos	"El siguiente código tiene un error: [tu código aquí]".
+Preguntas detalladas	"Explícame nuevamente este [concepto], dando otros ejemplos".
+Revisión del ejercicio	"Corrige mi solución para este ejercicio: [tu solución aquí]".
+❌ ¿Cuándo NO usar Luri?
+
+Soporte para la plataforma: Luri no está capacitada para ayudarte con el soporte en la plataforma. En estos casos, recomendamos contactar con nuestro equipo de soporte, quienes siempre están disponibles para ayudarte.
+
+Temas Fuera de Contexto: Tus preguntas deben estar relacionadas con el tema del curso en el que se realizan. Ej.: Hacer una pregunta de Java en un curso de React puede no generar un buen resultado.
+
+Preguntas que no sean técnicas: Para preguntas del tipo: qué opciones de carrera puedes seguir, para estos casos elige otros canales como foros o Discord.
+
+  ¿Cómo obtener buenas respuestas?
+
+Se claro. Tu pregunta debe ser detallada:
+
+❌ "Error IndexOutOfBoundsException"
+✅ "Luri, seguí el código de la clase y tuve un error en IndexOutOfBoundsException."
+Guía la respuesta. Dígale a Luri el tipo de respuesta que espera: Si le gustan las respuestas más cortas, agregue "Sea conciso". Si le gustan las analogías, inserte "Usar analogías cotidianas". La idea es que Luri pueda adaptarse a tu forma favorita de aprender.
+
+Si tienes más dudas, puedes ver nuestra página con información más detallada en: Conoce a Luri, nuestra Inteligencia Artificial impulsada por ChatGPT
+*************************************************************************************************************************
+02
+Preguntas Frecuentes
+ Siguiente pregunta
+
+Preguntas Frecuentes
+¿Qué son los Challenges ONE?
+
+Es una forma de implementar el Challenge Based Learning, es decir, aprendizaje basado en desafíos que Apple ayudó a crear. Es un mecanismo donde puedes comprometerte con la resolución de un problema para luego investigar soluciones con cursos, contenido conferencias; ¡o incluso con el conocimiento que ya tienes! Finalmente, actuarás y pondrás tu proyecto en línea. Todo esto mientras comentas y ayudas en los proyectos de otros estudiantes.
+
+Si tengo dudas, ¿con quién puedo hablar?
+
+En nuestro grupo oficial de Discord, tenemos canales específicos para los Challenges. Allí podrás consultar tus dudas con los instructores e instructoras y con el resto de los participantes. También tendremos Lives de mentoría "Alura responde" durante los desafíos para resolver las principales dudas.
+
+¿Recibiré un certificado?
+
+Una vez que entregues tu proyecto, podrás descargar tu certificado y badge correspondiente. Deberás compartirlo en tus redes profesionales como LinkedIn, etiquetando a Oracle y Alura Latam. Recuerda que los Challenges son parte integral del programa ONE y su objetivo es crear proyectos increíbles e incluirlos en tu portafolio para demostrar tus habilidades.
+
+¿Qué materiales o herramientas necesito instalar para realizar el curso?
+
+Cada etapa de los Challenges tendrá requisitos específicos que te informaremos a medida que se liberen los desafíos. Te guiaremos durante todo el proceso para que puedas completar tu proyecto sin preocupaciones.
+
+¿Cómo sabré sobre los nuevos desafíos?
+
+Enviaremos correos electrónicos de recordatorio cada vez que un nuevo desafío o Live esté por comenzar. Es importante revisar con frecuencia las carpetas de Spam, Promociones y Social en tu correo electrónico, ya que a veces nuestros mensajes pueden llegar allí.
+*************************************************************************************************************
+03
+Importancia del desafío
+ Siguiente pregunta
+
+Desafío Alura Store
+Con este desafío, pondrás en práctica conceptos iniciales de análisis de datos con Python, utilizando bibliotecas nativas de Python para la manipulación/extracción de archivos y la visualización de datos.
+
+Aplicación práctica del conocimiento
+Para realizar un análisis eficiente, es esencial comprender la manipulación de datos. El uso de variables permite almacenar y procesar información de manera dinámica, facilitando la extracción y el filtrado de datos.
+
+Las condicionales (if y else) son indispensables para estructurar la lógica de los análisis, permitiendo tomar decisiones basadas en métricas como facturación y valoraciones.
+
+Las funciones ayudan a modularizar el código, haciendo que el análisis sea más organizado y reutilizable. Permiten la creación de rutinas específicas para cálculos y visualizaciones, reduciendo la repetición de código y aumentando la eficiencia.
+
+Las listas son esenciales para manipular grandes conjuntos de datos. En Alura Store, trabajarás con tablas que almacenan productos, precios, valoraciones y mucho más. Además, los bucles (for) se utilizan para recorrer y procesar estos datos de forma optimizada.
+
+Dominar estos conceptos es esencial para convertirse en un analista de datos eficiente. El desafío Alura Store te permitirá aplicar estos conocimientos de manera práctica, analizando información y generando insights para la toma de decisiones.
+*****************************************************************************************************
+01
+Sobre el desafio
+En esta clase, se presenta el desafío Alura Store, donde el objetivo es ayudar al señor Juan a decidir cuál de sus cuatro tiendas debería vender para invertir en un nuevo negocio. Para ello, se realizará un análisis de ventas y rendimiento de las tiendas, evaluando cinco aspectos clave:
+
+Facturación total de cada tienda.
+Categorías más populares de productos en cada tienda.
+Promedio de evaluación de los clientes.
+Productos más y menos vendidos en cada tienda.
+Costo promedio de envío desde la tienda hasta los clientes.
+Se utilizará un tablero en Trello para organizar el proyecto, que incluye herramientas, control de versiones con GitHub, y un backlog con los elementos necesarios para comenzar el análisis. También se recomienda no modificar la parte de importación de datos en Google Colab, ya que los datos ya están cargados. Al final, se debe crear un informe para informar al señor Juan sobre cuál tienda tiene el menor rendimiento y debería considerar vender.
+
+Este desafío permite aplicar lo aprendido en Python y simula un entorno real de análisis de datos. ¡Es hora de comenzar!
+********************************************************************************************************************************
+02
+Trello del Desafio
+ Siguiente pregunta
+
+Trello del Desafío
+Trello es una herramienta de colaboración y gestión de proyectos que permite organizar tareas en tarjetas. Usarás esta herramienta para gestionar el desarrollo de tu proyecto.
+
+Accede al tablero del desafío
+Inicia sesión en tu cuenta de Trello y accede al tablero del desafío mediante el siguiente enlace:
+
+Challenge ONE Data Science - Alura Store | Trello
+Ingrese aquí la descripción de esta imagen para ayudar con la accesibilidad
+
+Creando tu copia de Trello
+Para comenzar a gestionar tu progreso, sigue estos pasos:
+
+Accede al tablero del desafío: Challenge ONE Data Science: Alura Store
+
+Crea un tablero a partir de este modelo:
+
+En la parte superior del tablero, haz clic en 'Crear tablero basado en plantilla' o, si lo prefieres, en los tres puntos en la parte superior y selecciona 'Copiar tablero'.
+Ingrese aquí la descripción de esta imagen para ayudar con la accesibilidad
+
+Ahora tienes una copia del tablero, incluyendo listas, tarjetas y etiquetas. Utiliza esta estructura para aplicar la metodología ágil y seguir tu progreso moviendo las tarjetas a medida que avanzas en el desafío.
+**********************
+Claro! Imagina que estás trabajando en tu proyecto de Data Science y tienes varias tareas que necesitas completar. En Trello, podrías crear listas como "Por Hacer", "En Progreso" y "Completado".
+
+Por ejemplo, en la lista "Por Hacer", podrías tener tarjetas como "Recopilar datos", "Limpiar datos" y "Crear visualizaciones". A medida que vayas avanzando, puedes mover estas tarjetas a "En Progreso" y luego a "Completado" cuando termines cada tarea.
+
+Esto te ayudará a visualizar tu progreso y mantenerte organizado. ¿Te gustaría saber más sobre cómo utilizar alguna función específica de Trello?
+**********************************************************************************
+En esta clase, el instructor Wilfredo Rojas presenta el desafío Alura Store, que consiste en realizar un análisis de ventas y rendimiento de cuatro tiendas para ayudar al señor Juan a decidir cuál tienda debería vender para invertir en un nuevo negocio.
+
+El objetivo es evaluar cinco aspectos clave:
+
+Facturación total de cada tienda: identificar cuál tienda vende más.
+Categorías más populares: determinar qué productos se venden más en cada tienda.
+Promedio de evaluación de clientes: analizar la satisfacción del cliente.
+Productos más y menos vendidos: conocer el rendimiento de los productos.
+Costo promedio de envío: evaluar los costos de envío desde cada tienda.
+Para llevar a cabo este análisis, se utilizará un tablero en Trello que contiene herramientas, instrucciones y un backlog con los elementos necesarios para el proyecto. También se trabajará con GitHub y Google Colab para manejar los datos.
+
+El desafío simula un entorno real de análisis de datos, permitiendo a los estudiantes aplicar lo aprendido en Python y tomar decisiones estratégicas basadas en el análisis realizado. ¡Es un excelente ejercicio para poner en práctica habilidades de análisis de datos!
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+02
+Trello del Desafio
+ Siguiente pregunta
+
+Trello del Desafío
+Trello es una herramienta de colaboración y gestión de proyectos que permite organizar tareas en tarjetas. Usarás esta herramienta para gestionar el desarrollo de tu proyecto.
+
+Accede al tablero del desafío
+Inicia sesión en tu cuenta de Trello y accede al tablero del desafío mediante el siguiente enlace:
+
+Challenge ONE Data Science - Alura Store | Trello
+Ingrese aquí la descripción de esta imagen para ayudar con la accesibilidad
+
+Creando tu copia de Trello
+Para comenzar a gestionar tu progreso, sigue estos pasos:
+
+Accede al tablero del desafío: Challenge ONE Data Science: Alura Store
+
+Crea un tablero a partir de este modelo:
+
+En la parte superior del tablero, haz clic en 'Crear tablero basado en plantilla' o, si lo prefieres, en los tres puntos en la parte superior y selecciona 'Copiar tablero'.
+Ingrese aquí la descripción de esta imagen para ayudar con la accesibilidad
+
+Ahora tienes una copia del tablero, incluyendo listas, tarjetas y etiquetas. Utiliza esta estructura para aplicar la metodología ágil y seguir tu progreso moviendo las tarjetas a medida que avanzas en el desafío.
+********************************************************************************************************
+03
+Preparando el ambiente
+ Siguiente pregunta
+
+Enfoque en el Análisis de Datos
+El principal objetivo de este desafío es comenzar a desarrollar tus habilidades en análisis de datos con Python. Para que puedas enfocarte en la lógica del análisis y en la extracción de insights, te proporcionamos un cuaderno base en GitHub con las cuatro bases de datos ya preparadas. Así, no tendrás que preocuparte por la extracción de los archivos CSV y podrás dedicarte directamente a la manipulación y visualización de los datos.
+
+Accede al cuaderno base
+Repositorio Base - Alura Store
+Ingrese aquí la descripción de esta imagen para ayudar con la accesibilidad
+
+Con este material listo, podrás aplicar conceptos clave como manipulación de datos con Pandas, estructuración de datos en listas, uso de condicionales, funciones y visualización de información para obtener insights valiosos sobre las tiendas de Alura Store.
+*************************************************************************************************************
+04
+Para saber más
+ Siguiente pregunta
+
+Este desafío fue diseñado para que puedas aplicar de manera práctica los conocimientos adquiridos en los siguientes cursos:
+
+Python para Data Science: primeros pasos
+
+~ https://app.aluracursos.com/course/python-data-science-primeros-pasos
+
+Python para Data Science: trabajar con funciones, estructuras de datos y excepciones
+
+~ https://app.aluracursos.com/course/python-data-science-trabajar-funciones-estructuras-datos-excepciones
+
+************************************************************************************************************************
+
+
+

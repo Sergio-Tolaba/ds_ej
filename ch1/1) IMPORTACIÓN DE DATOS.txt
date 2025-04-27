@@ -1,0 +1,330 @@
+******************************************************************************** 1) IMPORTACIÓN DE DATOS
+import pandas as pd
+
+url = "https://raw.githubusercontent.com/alura-es-cursos/challenge1-data-science-latam/refs/heads/main/base-de-datos-challenge1-latam/tienda_1%20.csv"
+url2 = "https://raw.githubusercontent.com/alura-es-cursos/challenge1-data-science-latam/refs/heads/main/base-de-datos-challenge1-latam/tienda_2.csv"
+url3 = "https://raw.githubusercontent.com/alura-es-cursos/challenge1-data-science-latam/refs/heads/main/base-de-datos-challenge1-latam/tienda_3.csv"
+url4 = "https://raw.githubusercontent.com/alura-es-cursos/challenge1-data-science-latam/refs/heads/main/base-de-datos-challenge1-latam/tienda_4.csv"
+
+tienda = pd.read_csv(url)
+tienda2 = pd.read_csv(url2)
+tienda3 = pd.read_csv(url3)
+tienda4 = pd.read_csv(url4)
+
+tienda.head()
+********************************************************************************** 2)ANALISIS DE FACTURACION
+# Cálculo de los ingresos por cada tienda
+ingresos_tienda = tienda['Precio'].sum()
+ingresos_tienda2 = tienda2['Precio'].sum()
+ingresos_tienda3 = tienda3['Precio'].sum()
+ingresos_tienda4 = tienda4['Precio'].sum()
+
+# Creo un diccionario con la información anterior:
+ingresos = {
+    'Tienda': ingresos_tienda,
+    'Tienda 2': ingresos_tienda2,
+    'Tienda 3': ingresos_tienda3,
+    'Tienda 4': ingresos_tienda4
+}
+
+# Lazo for para recorrer el diccionario, aplicación del método dict.items() y presentar la información
+for tienda, ingresos in ingresos.items():
+    print(f"{tienda}: ${ingresos}")
+************************************************************************************ 3) VENTAS POR CATEGORIA
+# Cálculo de ventas por categoría - Tienda
+categorias = tienda["Categoría del Producto"].tolist()
+precios = tienda["Precio"].tolist()
+
+ventas_por_categoria = {}
+
+for i in range(len(categorias)):
+    categoria = categorias[i]
+    precio = precios[i]
+    if categoria in ventas_por_categoria:
+        ventas_por_categoria[categoria] += precio
+    else:
+        ventas_por_categoria[categoria] = precio
+
+print("Ventas por Categoría - Tienda:\n")
+for categoria, total in ventas_por_categoria.items():
+    print(f"{categoria}: ${int(total)}")
+
+
+# Cálculo de ventas por categoría - Tienda 2
+categorias2 = tienda2["Categoría del Producto"].tolist()
+precios2 = tienda2["Precio"].tolist()
+
+ventas_por_categoria2 = {}
+
+for i in range(len(categorias2)):
+    categoria = categorias2[i]
+    precio = precios2[i]
+    if categoria in ventas_por_categoria2:
+        ventas_por_categoria2[categoria] += precio
+    else:
+        ventas_por_categoria2[categoria] = precio
+
+print("\nVentas por Categoría - Tienda 2:\n")
+for categoria, total in ventas_por_categoria2.items():
+    print(f"{categoria}: ${int(total)}")
+
+
+# Cálculo de ventas por categoría - Tienda 3
+categorias3 = tienda3["Categoría del Producto"].tolist()
+precios3 = tienda3["Precio"].tolist()
+
+ventas_por_categoria3 = {}
+
+for i in range(len(categorias3)):
+    categoria = categorias3[i]
+    precio = precios3[i]
+    if categoria in ventas_por_categoria3:
+        ventas_por_categoria3[categoria] += precio
+    else:
+        ventas_por_categoria3[categoria] = precio
+
+print("\nVentas por Categoría - Tienda 3:\n")
+for categoria, total in ventas_por_categoria3.items():
+    print(f"{categoria}: ${int(total)}")
+
+
+# Cálculo de ventas por categoría - Tienda 4
+categorias4 = tienda4["Categoría del Producto"].tolist()
+precios4 = tienda4["Precio"].tolist()
+
+ventas_por_categoria4 = {}
+
+for i in range(len(categorias4)):
+    categoria = categorias4[i]
+    precio = precios4[i]
+    if categoria in ventas_por_categoria4:
+        ventas_por_categoria4[categoria] += precio
+    else:
+        ventas_por_categoria4[categoria] = precio
+
+print("\nVentas por Categoría - Tienda 4:\n")
+for categoria, total in ventas_por_categoria4.items():
+    print(f"{categoria}: ${int(total)}")
+*************************************************************************************  4)CALIFICACION PROMEDIO DE CADA TIENDA
+# Calificación promedio - Tienda 1
+calificaciones = tienda["Calificación"].tolist()
+
+suma_calificaciones = 0
+cantidad_calificaciones = 0
+
+for calificacion in calificaciones:
+    suma_calificaciones += calificacion
+    cantidad_calificaciones += 1
+
+promedio_tienda1 = suma_calificaciones / cantidad_calificaciones
+print(f"Calificación promedio - Tienda 1: {round(promedio_tienda1, 2)}")
+
+
+# Calificación promedio - Tienda 2
+calificaciones2 = tienda2["Calificación"].tolist()
+
+suma_calificaciones2 = 0
+cantidad_calificaciones2 = 0
+
+for calificacion in calificaciones2:
+    suma_calificaciones2 += calificacion
+    cantidad_calificaciones2 += 1
+
+promedio_tienda2 = suma_calificaciones2 / cantidad_calificaciones2
+print(f"Calificación promedio - Tienda 2: {round(promedio_tienda2, 2)}")
+
+
+# Calificación promedio - Tienda 3
+calificaciones3 = tienda3["Calificación"].tolist()
+
+suma_calificaciones3 = 0
+cantidad_calificaciones3 = 0
+
+for calificacion in calificaciones3:
+    suma_calificaciones3 += calificacion
+    cantidad_calificaciones3 += 1
+
+promedio_tienda3 = suma_calificaciones3 / cantidad_calificaciones3
+print(f"Calificación promedio - Tienda 3: {round(promedio_tienda3, 2)}")
+
+
+# Calificación promedio - Tienda 4
+calificaciones4 = tienda4["Calificación"].tolist()
+
+suma_calificaciones4 = 0
+cantidad_calificaciones4 = 0
+
+for calificacion in calificaciones4:
+    suma_calificaciones4 += calificacion
+    cantidad_calificaciones4 += 1
+
+promedio_tienda4 = suma_calificaciones4 / cantidad_calificaciones4
+print(f"Calificación promedio - Tienda 4: {round(promedio_tienda4, 2)}")
+*********************************************************************************************** 5)PRODUCTOS MAS Y MENOS VENDIDOS
+# ------------------ Tienda 1 ------------------
+productos = tienda["Producto"].tolist()
+
+ventas_productos = {}
+
+for producto in productos:
+    if producto in ventas_productos:
+        ventas_productos[producto] += 1
+    else:
+        ventas_productos[producto] = 1
+
+# Buscar el más vendido y el menos vendido
+mas_vendido = ""
+menos_vendido = ""
+max_ventas = 0
+min_ventas = float('inf')
+
+for producto, cantidad in ventas_productos.items():
+    if cantidad > max_ventas:
+        max_ventas = cantidad
+        mas_vendido = producto
+    if cantidad < min_ventas:
+        min_ventas = cantidad
+        menos_vendido = producto
+
+print("Tienda 1:")
+print(f"Producto más vendido: {mas_vendido} ({max_ventas} ventas)")
+print(f"Producto menos vendido: {menos_vendido} ({min_ventas} ventas)\n")
+
+
+# ------------------ Tienda 2 ------------------
+productos2 = tienda2["Producto"].tolist()
+ventas_productos2 = {}
+
+for producto in productos2:
+    if producto in ventas_productos2:
+        ventas_productos2[producto] += 1
+    else:
+        ventas_productos2[producto] = 1
+
+mas_vendido2 = ""
+menos_vendido2 = ""
+max_ventas2 = 0
+min_ventas2 = float('inf')
+
+for producto, cantidad in ventas_productos2.items():
+    if cantidad > max_ventas2:
+        max_ventas2 = cantidad
+        mas_vendido2 = producto
+    if cantidad < min_ventas2:
+        min_ventas2 = cantidad
+        menos_vendido2 = producto
+
+print("Tienda 2:")
+print(f"Producto más vendido: {mas_vendido2} ({max_ventas2} ventas)")
+print(f"Producto menos vendido: {menos_vendido2} ({min_ventas2} ventas)\n")
+
+
+# ------------------ Tienda 3 ------------------
+productos3 = tienda3["Producto"].tolist()
+ventas_productos3 = {}
+
+for producto in productos3:
+    if producto in ventas_productos3:
+        ventas_productos3[producto] += 1
+    else:
+        ventas_productos3[producto] = 1
+
+mas_vendido3 = ""
+menos_vendido3 = ""
+max_ventas3 = 0
+min_ventas3 = float('inf')
+
+for producto, cantidad in ventas_productos3.items():
+    if cantidad > max_ventas3:
+        max_ventas3 = cantidad
+        mas_vendido3 = producto
+    if cantidad < min_ventas3:
+        min_ventas3 = cantidad
+        menos_vendido3 = producto
+
+print("Tienda 3:")
+print(f"Producto más vendido: {mas_vendido3} ({max_ventas3} ventas)")
+print(f"Producto menos vendido: {menos_vendido3} ({min_ventas3} ventas)\n")
+
+
+# ------------------ Tienda 4 ------------------
+productos4 = tienda4["Producto"].tolist()
+ventas_productos4 = {}
+
+for producto in productos4:
+    if producto in ventas_productos4:
+        ventas_productos4[producto] += 1
+    else:
+        ventas_productos4[producto] = 1
+
+mas_vendido4 = ""
+menos_vendido4 = ""
+max_ventas4 = 0
+min_ventas4 = float('inf')
+
+for producto, cantidad in ventas_productos4.items():
+    if cantidad > max_ventas4:
+        max_ventas4 = cantidad
+        mas_vendido4 = producto
+    if cantidad < min_ventas4:
+        min_ventas4 = cantidad
+        menos_vendido4 = producto
+
+print("Tienda 4:")
+print(f"Producto más vendido: {mas_vendido4} ({max_ventas4} ventas)")
+print(f"Producto menos vendido: {menos_vendido4} ({min_ventas4} ventas)")
+******************************************************************************************** 6) COSTO DEL ENVIO PROMEDIO POR TIENDA
+# ------------------ Tienda 1 ------------------
+envios = tienda["Costo de envío"].tolist()
+
+suma_envios = 0
+cantidad_envios = 0
+
+for costo in envios:
+    suma_envios += costo
+    cantidad_envios += 1
+
+promedio_envio1 = suma_envios / cantidad_envios
+print(f"Costo de envío promedio - Tienda 1: ${round(promedio_envio1, 2)}")
+
+
+# ------------------ Tienda 2 ------------------
+envios2 = tienda2["Costo de envío"].tolist()
+
+suma_envios2 = 0
+cantidad_envios2 = 0
+
+for costo in envios2:
+    suma_envios2 += costo
+    cantidad_envios2 += 1
+
+promedio_envio2 = suma_envios2 / cantidad_envios2
+print(f"Costo de envío promedio - Tienda 2: ${round(promedio_envio2, 2)}")
+
+
+# ------------------ Tienda 3 ------------------
+envios3 = tienda3["Costo de envío"].tolist()
+
+suma_envios3 = 0
+cantidad_envios3 = 0
+
+for costo in envios3:
+    suma_envios3 += costo
+    cantidad_envios3 += 1
+
+promedio_envio3 = suma_envios3 / cantidad_envios3
+print(f"Costo de envío promedio - Tienda 3: ${round(promedio_envio3, 2)}")
+
+
+# ------------------ Tienda 4 ------------------
+envios4 = tienda4["Costo de envío"].tolist()
+
+suma_envios4 = 0
+cantidad_envios4 = 0
+
+for costo in envios4:
+    suma_envios4 += costo
+    cantidad_envios4 += 1
+
+promedio_envio4 = suma_envios4 / cantidad_envios4
+print(f"Costo de envío promedio - Tienda 4: ${round(promedio_envio4, 2)}")
