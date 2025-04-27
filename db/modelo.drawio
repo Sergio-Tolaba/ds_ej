@@ -5,13 +5,13 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="oGvwPSa7rUXXweESWLWe-1" value="Cliente" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="360" y="250" width="100" height="40" as="geometry" />
+          <mxGeometry x="314" y="20" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="oGvwPSa7rUXXweESWLWe-2" value="Editorial" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="240" y="320" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="oGvwPSa7rUXXweESWLWe-3" value="Pedido" style="shape=ext;margin=3;double=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="500" y="280" width="100" height="40" as="geometry" />
+          <mxGeometry x="314" y="180" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="oGvwPSa7rUXXweESWLWe-4" value="Libro" style="shape=ext;margin=3;double=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="500" y="370" width="100" height="40" as="geometry" />
@@ -19,8 +19,8 @@
         <mxCell id="oGvwPSa7rUXXweESWLWe-5" value="Inventario" style="shape=ext;margin=3;double=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="510" y="450" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="oGvwPSa7rUXXweESWLWe-6" value="Relationship" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="110" y="210" width="120" height="60" as="geometry" />
+        <mxCell id="oGvwPSa7rUXXweESWLWe-6" value="Compra" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="170" y="110" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
