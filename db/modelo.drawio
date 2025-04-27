@@ -161,13 +161,13 @@
         <mxCell id="j0QYSwoIqu1QwtUw-Y4--50" value="P jurídica" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="195" y="465" width="70" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="j0QYSwoIqu1QwtUw-Y4--52" value="CUIL" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+        <mxCell id="j0QYSwoIqu1QwtUw-Y4--52" value="DNI" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="80" y="520" width="80" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="j0QYSwoIqu1QwtUw-Y4--54" value="CUIT" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+        <mxCell id="j0QYSwoIqu1QwtUw-Y4--54" value="CUIL" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="80" y="565" width="80" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="j0QYSwoIqu1QwtUw-Y4--56" value="CDI" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+        <mxCell id="j0QYSwoIqu1QwtUw-Y4--56" value="CUIT" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="85" y="610" width="80" height="40" as="geometry" />
         </mxCell>
         <mxCell id="j0QYSwoIqu1QwtUw-Y4--57" value="CUIT" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
