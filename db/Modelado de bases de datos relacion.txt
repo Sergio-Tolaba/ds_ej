@@ -1,0 +1,693 @@
+Modelado de bases de datos relacionales: modelado lógico y físico
+01. Tipos de modelado
+01 Presentación
+En esta clase, el instructor Álvaro Camacho nos da la bienvenida al curso de modelado de bases de datos relacionales, donde se abordarán los tipos de modelado: conceptual, lógico y físico. Comenzaremos con un modelo conceptual, que se representa mediante un diagrama entidad-relación. A partir de este modelo conceptual, avanzaremos hacia un modelo lógico que se asemeja a una base de datos, con tablas y campos definidos. Finalmente, se desarrollará un modelo físico que convertirá las entidades en tablas, especificando dominios y restricciones. El instructor invita a los estudiantes a preparar su ambiente para comenzar a trabajar en estos conceptos.
+************************************************************************************************
+02
+Conoce a Luri, nuestra IA
+***************************************+
+02
+Diversos modelos (Inicio: modelo conceptual que termina con el Diagrama Entidad-Relación// Luego el Modelo lógico con las tablas// Modelo físico c/detalle db)
+En esta clase, se aborda el proceso de modelado de bases de datos relacionales, comenzando desde un modelo conceptual hasta llegar a un modelo lógico y luego a un modelo físico. Se menciona que el modelo conceptual se representa a través de un diagrama entidad-relación, y se destaca la importancia de transformar este modelo en un modelo lógico, que utiliza un formato de tablas llamadas relaciones, donde se identifican campos y sus restricciones, así como la cardinalidad mínima y máxima entre las entidades.
+
+Además, se introduce la herramienta SQL Power Architect, que se utilizará para crear el modelo físico de la base de datos, el cual incluye información más detallada sobre las tablas, atributos (columnas), dominios, aceptación de valores nulos y tipos de restricciones. Se menciona también la simbología de la cardinalidad, que se representa con símbolos específicos. La clase concluye con la promesa de que en el próximo video se comenzará a trabajar en la elaboración del modelo lógico.
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+03
+Características de MLD y MFD
+ Siguiente pregunta
+
+Una de las integrantes del equipo de Martha, Johanna, estaba tratando de entender las características que diferencian los Modelos Lógicos de Datos (MLDs) de los Modelos Físicos de Datos (MFDs). Para ello, a Martha compartió con ella un material para profundizar sus estudios y prepararla para la implementación del proyecto de bases de datos del Club del Libro. ¡Vamos a ayudarle a Johanna!
+
+De acuerdo con lo que aprendimos en los videos, ¿Cuáles alternativas definen mejor las características y diferencias entre los Modelos Lógicos de Datos (MLDs) y los Modelos Físicos de Datos (MFDs)?
+
+Alternativa correta
+El Modelo Físico de Datos (MFD) es ampliamente utilizado en proyectos tanto ágiles como tradicionales y presenta el proyecto de la base de datos con una mayor riqueza de detalles frente al Modelo Lógico de Datos (MLD).
+
+
+El Modelo Físico de Datos (MFD) es ampliamente utilizado por presentar detalles como las tablas asociativas, por indicar los tipos de datos de cada campo y las claves que serán necesarias para trazar las relaciones.
+
+Alternativa correta
+El Modelo Lógico de Datos (MLD) es raramente utilizado en proyectos ágiles, pues el enfoque de este modelo radica en describir los conceptos de dominio involucrados en una base de datos.
+
+
+El Modelo Lógico de Datos (MLD) raramente es utilizado en proyectos ágiles, al contrario del Modelo Físico de Datos (MFD).
+
+Alternativa correta
+El Modelo Lógico de Datos (MLD) es utilizado para proyectar el esquema interno de una base de datos, describiendo las tablas de datos, las columnas de datos de las tablas y las relaciones entre ellas.
+
+
+Alternativa correta
+El Modelo Físico de Datos (MFD) comúnmente refleja los patrones de nomenclatura de una base de datos de la organización, pero sin la necesidad de presentar detalles como las tablas asociativas y claves necesarias para las relaciones.
+*******************************************************************************************
+04 Para saber más: representando el modelo lógico
+ Siguiente pregunta
+
+El modelo lógico de datos es creado a partir de las descripciones de los datos representadas en un modelo conceptual. Este describe cómo los datos serán almacenados en la base de datos, identificando las entidades, los atributos, las claves principales y foráneas y sus relaciones.
+
+Hay dos formas que podemos utilizar para representar el modelo lógico: La forma horizontal o la forma vertical. Durante el curso fue utilizada la representación vertical, donde los atributos (que más adelante serán llamados campos) son representados uno abajo del otro, los atributos clave son identificados y las relaciones son representadas a través de líneas uniendo una relación a la otra:
+ ~ Fig1
+En la forma horizontal, los atributos (campos) son presentados uno al lado del otro, los atributos clave son subrayados en las relaciones y las relaciones son representadas a través de una flecha, que sale de la relación dependiente y llega a la relación propietaria. Ya las cardinalidades no son representadas, como en el ejemplo a continuación:
+~ Fig2
+********************************************************************************
+05
+Modelado lógico
+En esta clase, se aborda el proceso de creación de un modelo lógico a partir de un diagrama de entidad-relación previamente elaborado. Se utiliza la herramienta diagrams.net para realizar este modelado.
+
+El instructor menciona que, en el modelo lógico, se trabaja con relaciones en lugar de entidades, y se hace una distinción entre el modelo lógico y el modelo físico, que se refiere a las tablas. Se explica cómo abrir un nuevo diagrama en blanco, nombrarlo y comenzar a construir el modelo lógico utilizando las relaciones y entidades del diagrama anterior.
+
+El enfoque es realizar un modelado vertical, y se enfatiza la importancia de utilizar los términos correctos a lo largo del proceso. La clase concluye con la promesa de continuar el trabajo en el siguiente video.
+///////////////////////////////////////////////////////////////////////////////
+ 06 Pasos para el MLD
+ Siguiente pregunta
+
+El proceso de modelado de bases de datos no se inicia con la construcción del modelo lógico; este sigue algunos pasos anteriores que irán a ayudar en la construcción de este modelo, es decir, los pasos que acompañamos en el proyecto desarrollado por Martha hasta aquí.
+
+Con base en lo que aprendimos hasta ahora, ¿Cuáles son estos pasos y cuál es su orden en el proceso de modelado de bases de datos?
+
+Alternativa correta
+Entrevista con el usuario, creación del mini mundo, modelo conceptual, modelo lógico y modelo físico.
+
+
+Siguiendo todos los pasos indicados es posible modelar una base de datos atendiendo todos los requisitos del usuario.
+
+Alternativa correta
+Creación del mini mundo, entrevista con el usuario, modelo conceptual, modelo lógico y modelo físico.
+
+
+Alternativa correta
+Creación del mini mundo, entrevista con el usuario, modelo lógico, modelo físico y modelo conceptual.
+
+
+Alternativa correta
+Entrevista con el usuario, creación del mini mundo, modelo conceptual, modelo físico y modelo lógico.
+*********************************************************************************************
+ 07 Haga lo que hicimos
+ Siguiente pregunta
+
+Tras las entrevistas con el usuario, la creación del mini mundo y el desarrollo del modelo conceptual, Martha y su equipo avanzarán a una nueva etapa del proyecto, desarrollar el modelo lógico.
+
+Con los conceptos aprendidos sobre lo que son los modelos lógicos y cómo son importantes en el desarrollo de un proyecto de base de datos, piensa en algún proyecto o situación de tu día a día que pueda ser tratada con un modelo lógico. El modelo podrá ser desarrollado con la herramienta Diagrams.net o utilizando cualquier otro software de tu preferencia.
+
+Tip: Puedes apoyarte en el modelo desarrollado en el curso Modelado de bases de datos relacionales: Entidades, relaciones y atributos para pensar en un modelo lógico, a partir del modelo conceptual que previamente fue construído.
+
+Ver opinión del instructor
+Opinión del instructor
+
+¡Continúa estudiando y aplicando lo que has aprendido! Siéntete libre de compartir este proyecto en tus redes sociales y etiquetarnos, nos va a encantar poder apoyar esta nueva etapa de tu desarrollo.
+**********************************************************************************
+08
+Lo que aprendimos
+ Siguiente pregunta
+
+Lo que aprendimos en esta aula:
+
+Diferenciar y caracterizar los modelos lógico y físico;
+Conocer las formas de representación del modelo lógico;
+Representar el modelo lógico utilizando Diagrams.net.
+***************************************************************
+****************************************************************
+02. Modelado lógico
+01
+Entidades y atributos
+En esta clase, se aborda el modelado lógico de bases de datos relacionales, centrándose en las entidades y atributos. Se presentan dos entidades fuertes: "cliente" y "editorial".
+
+Primero, se trabaja en la entidad "cliente", donde se define su clave principal como "cod_cliente" y se incluyen atributos como el nombre, dirección (dividida en calle, barrio, ciudad y estado), teléfono y e-mail. Se enfatiza la importancia de usar nombres en minúscula y evitar caracteres especiales para facilitar la implementación en un sistema de gestión de bases de datos.
+
+Luego, se pasa a la entidad "editorial", cuya clave principal es "cod_editorial" y se añaden atributos como nombre de contacto, e-mail y dos números de teléfono.
+
+Al final de la clase, se menciona que el equipo se preparará para trabajar con las entidades débiles en la siguiente sesión.
+*********************************************************************
+02
+Clasificando items en el MLD
+ Siguiente pregunta
+
+Ahora que Martha inició con la construcción del modelo lógico, ella va a transferir la información del modelo conceptual dejándolo estructurado en forma de tabla. Antes de continuar con este paso, Johanna presentó algunas dudas en cuanto a la clasificación de los atributos y entidades dentro de este nuevo modelo.
+
+Con base en lo que aprendimos, clasifica los datos del siguiente modelo lógico determinando la relación/tabla, el atributo clave principal y los atributos simples para ayudar a Johanna a entender este proceso.
+
+Colaborador(a)		1
+id_colaborador(a)		2
+nombre		3
+teléfono		4
+dirección		5
+% de comisión		6
+Alternativa correta
+1 - relación/tabla; 2 - atributo clave principal; 3 - atributo simple, 4 - atributo simple, 5 - atributo simple, 6 - atributo clave principal.
+
+
+Alternativa correta
+1 - atributo clave principal; 2 - relación/tabla; 3 - atributo simple, 4 - atributo simple, 5 - atributo simple, 6 - atributo simple.
+
+
+Alternativa correta
+1 - relación/tabla; 2 - atributo clave principal; 3 - atributo simple, 4 - atributo simple, 5 - atributo simple, 6 - atributo simple.
+
+
+Colaborador(a) es la tabla y el atributo que es único para cada inserción de la tabla es ID_Colabolador(a), este nos ayudará a identificar cada fila de la tabla. Todos los demás atributos pueden considerarse como atributos simples.
+
+Alternativa correta
+1 - atributo clave principal; 2 - relación/tabla; 3 - atributo clave principal, 4 - atributo simple, 5 - atributo simple, 6 - atributo simple.
+****************************************************************************
+03
+Entidades débiles
+En esta clase, se aborda el modelado lógico de bases de datos relacionales, centrándose en las entidades débiles. Se comienza con la creación de la entidad débil "pedido", que se relaciona con la entidad fuerte "cliente" a través de una clave foránea (FK). Se destaca que las entidades débiles no tienen una clave principal (PK) propia, sino que utilizan una clave parcial, en este caso, el "código de pedido".
+
+Luego, se introduce la entidad débil "libro", que también tiene una clave parcial (código del libro) y se relaciona con la entidad "editorial" mediante otra clave foránea. Se mencionan los atributos de la entidad "libro", como título, categoría, ISBN, año de publicación, editorial, valor y autor.
+
+Finalmente, se crea otra entidad débil llamada "inventario", que se relaciona directamente con "libro" a través del código del libro y contiene un atributo de cantidad. La clase concluye mencionando que en el próximo video se abordarán las entidades asociativas y los atributos de especialización.
+//////////////////////////////////////////////////////////////////////////////////
+04
+Representando entidades fuertes y débiles
+ Siguiente pregunta
+
+A cada nuevo aprendizaje, Johanna se siente aún más confiada para ayudar en la construcción del modelo lógico del Club del Libro. Junto a ella, aprendemos como construir las entidades fuertes y débiles (relaciones) de modelado de datos como las presentadas a continuación.
+
+4.jpg
+
+Entretanto, para lograr construir nuestro proyecto en el modelo físico más adelante, es muy importante tener la certeza de que comprendemos correctamente cómo diferenciarlas en el modelo lógico.
+
+Con base en lo que aprendimos y de acuerdo con diagrams.net, escoge las alternativas que diferencia entre las entidades fuertes y débiles en el modelo lógico:
+
+Alternativa correta
+Una entidad débil siempre depende de una entidad fuerte para su existencia, representada por una clave foránea FK, pero puede poseer una clave identificadora, conocida como clave parcial, representada por la sigla PK.
+
+
+Esto es lo que observamos en el diagrama presentado.
+
+Alternativa correta
+Toda entidad fuerte posee una clave principal, que en el modelado lógico es representado por (PK,FK), mientras que la entidad débil necesita de al menos una clave foránea (FK).
+
+
+Alternativa correta
+Toda entidad fuerte posee una clave principal, que en el modelado lógico está representado por las siglas PK. Por otro lado, una entidad débil necesita de al menos una clave foránea, representada por las siglas FK.
+
+
+Esta es la forma de distinguir las entidades.
+
+Alternativa correta
+Una entidad débil siempre depende de una entidad fuerte para su existencia, por medio de una clave foránea (PK). Pero, ella puede poseer una clave identificadora, conocida como clave parcial, representada por las siglas (FK).	
+***********************************************************************************++
+05
+Atributo de especialización y generalización
+En esta clase se abordó el modelado lógico de bases de datos relacionales, centrándose en los atributos de especialización y generalización, así como en la creación de entidades asociativas. Se explicó que una entidad asociativa se representa como una tabla y se introdujeron los conceptos de claves foráneas y claves parciales.
+
+Se presentó un ejemplo práctico donde se definieron dos tipos de clientes: persona natural y persona jurídica, cada uno con sus respectivos atributos y claves foráneas que los relacionan con la entidad cliente. Además, se discutió la importancia de establecer relaciones entre las diferentes entidades, como pedidos, items, libros y editoriales.
+
+Se enfatizó la necesidad de definir la cardinalidad de las relaciones, es decir, cuántas instancias de una entidad pueden estar asociadas a otra. Esto es crucial para el modelo físico que se desarrollará en la siguiente clase. En resumen, se sentaron las bases para construir un modelo lógico sólido que facilite la transición al modelo físico en el futuro.
+***************************************************************+
+06
+Para saber más: atributos de relaciones
+ Siguiente pregunta
+
+Al desarrollar el modelo conceptual de un proyecto, podemos identificar que algunas relaciones poseen atributos, que son normalmente conocidos como atributos de relación. Estos atributos están directamente vinculados a una relación, pero durante el proceso de desarrollo del modelo conceptual es necesario mover estos atributos para una de las entidades participantes de relación y ellos pasan a ser conocidos como atributos migrados.
+
+Existen reglas para que la migración del atributo de relación para una entidad sea hecho. En relaciones del tipo 1:1 o 1:N pueden ser migrados para una de las entidades participantes:
+
+En relaciones 1:1 el atributo puede ser migrado para cualquier una de las entidades pertenecientes a la relación, ya que las dos entidades reciben apenas una instancia por vez de la relación.
+
+Vamos a utilizar como ejemplo la siguiente relación, en la cual es necesario almacenar la información de cuando el colaborador(a) comenzó a gerenciar el departamento.
+
+12.jpg
+
+Al leer la cardinalidad:
+
+Un colaborador(a) gestiona apenas un departamento, o sea, la entidad colaborador(a) recibe apenas una ocurrencia a la vez de la relación.
+
+Un departamento puede ser gestionado apenas por un colaborador(a), o sea, la entidad departamento recibe apenas una ocurrencia a la vez de la relación.
+
+Aunque conceptualmente este pertenezca a la relación “gestiona”, el atributo fecha puede ser migrado para cualquiera de las entidades participantes de la relación, pues las dos entidades reciben apenas una ocurrencia a la vez de la relación.
+
+13.jpg
+
+En las relaciones 1:N el atributo será migrado para la entidad que recibe apenas una instancia a la vez de la relación. Vamos a utilizar como ejemplo la siguiente relación. En ella es necesario almacenar la información sobre cuándo el colaborador(a) comenzó a trabajar para el departamento.
+
+14.jpg
+
+Al leer la cardinalidad:
+
+Un colaborador(a) trabaja tan solo para un departamento, o sea, la entidad colaborador(a) recibe apenas una ocurrencia a la vez de la relación.
+
+Un departamento puede tener varios colaboradores(as), o sea, la entidad departamento recibe varias ocurrencias de la relación.
+
+Siendo así, migramos el atributo para el lado N de la relación, para la entidad colaborador(a), pues esta entidad recibe apenas una ocurrencia a la vez de la relación.
+
+15.jpg
+
+En las relaciones N:M, la regla es un poco diferente, ya que ninguna de las entidades participantes de la relación reciben apenas una instancia a la vez de la relación. En estos casos, los atributos no son migrados hacia una entidad y permanecen en la relación, creando así una nueva entidad, conocida como entidad asociativa. Esta es compuesta por los atributos provenientes de las dos entidades vinculadas a la relación y por sus propios atributos.
+
+Vamos a utilizar como ejemplo la siguiente relación, donde es necesario almacenar la información de cuántas horas un colaborador(a) trabaja en un proyecto.
+
+16.jpg
+
+Al leer la cardinalidad:
+
+Un colaborador(a) trabaja en varios proyectos, o sea, la entidad colaborador(a) recibe varias ocurrencias de la relación.
+
+Un proyecto puede tener varios colaboradores(as) trabajando, o sea, la entidad proyecto recibe varias ocurrencias de la relación.
+
+Siendo así, no migramos el atributo para una de las entidades participantes de la relación, ya que las dos entidades reciben varias ocurrencias a la vez de la relación que, posteriormente, se convertirá en una nueva entidad.
+
+ Discutir en el Foro
+*****************************************************************************+
+07
+Haga lo que hicimos
+ Siguiente pregunta
+
+Acompañamos a Martha en la construcción del modelo lógico y ¡ahora llegó tu oportunidad de ponerlo en práctica!
+
+Continúa la construcción del modelo lógico utilizando un proyecto o situación de tu día a día. El modelo podrá ser desarrollado utilizando Diagrams.net o el software de tu preferencia.
+
+Ver opinión del instructor
+Opinión del instructor
+
+¡Continúa estudiando y aplicando lo que aprendiste! Recuerda que todas las prácticas sugeridas durante el curso pueden ayudarte a estructurar un portafolio increíble sobre modelado de bases de datos relacionales. ¿Qué tal desarrollar esta idea?
+
+Adicionalmente, puedes compartir tus avances en las redes sociales y etiquetarnos para acompañar tu progreso a través de estos medios también.
+*********************************************************************************
+08
+Lo que aprendimos
+ Siguiente pregunta
+
+Lo que aprendimos en esta aula:
+
+Nombrar los items en el modelo lógico;
+Construir el modelo lógico de la base de datos;
+Representar las entidades fuertes y débiles en el modelo lógico;
+Diferenciar los atributos de relaciones: Especialización y generalización.
+*************************************************************************
+*************************************************************************
+03. Modelos Físicos
+01
+SQL Power Architect
+En esta clase, se da la bienvenida a los estudiantes y se les explica que han completado el modelo lógico y ahora procederán a elaborar el modelo físico utilizando SQL Power Architect. Se menciona que este programa es un entorno especial que permite plasmar el modelo lógico de manera efectiva.
+
+Se instruye a los estudiantes sobre cómo descargar e instalar SQL Power Architect, comenzando con la instalación de Java Runtime, que es un prerrequisito. Se detallan los pasos para descargar Java, instalarlo y luego proceder a descargar SQL Power Architect. Se explica cómo instalar el programa, aceptar los términos y condiciones, y crear accesos directos en el escritorio.
+
+Finalmente, se menciona que, tras la instalación, se debe crear un archivo PL.ini y se presentan algunos enlaces útiles para tutoriales y soporte. La clase concluye indicando que en el próximo video se comenzará a trabajar en el modelo físico.
+*************************************************************************************************************
+02
+Preparando el ambiente: instalando SQL Power Arquitect
+ Siguiente pregunta
+
+Como prerrequisito, para realizar la instalación de la herramienta SQL Power Architect en tu ambiente, es necesario que Java esté instalado. En caso de que no lo tengas o quieras actualizar tu ambiente, puedes realizar la instalación a través de este link:
+
+Instalando o Java
+
+Instalando SQL Power Architect
+
+Accede al enlace, para realizar el download de SQL Power Architect.
+
+Al acceder a la página, localiza la opción SQL Power Architect community edition.
+
+19.jpg
+
+Al hacer clic en la opción SQL Power Architect community edition, serás redireccionado para escoger el sistema operativo que utilizas. Haz clic en Download SQL Power Architect para tu OS y el download será iniciado.
+
+20.jpg
+
+Tras realizar el download, localiza en el directorio el archivo descargado y ejecuta el instalador de SQL Power Architect.
+
+En la ventana de bienvenida, haz clic en Next.
+
+21.jpg
+
+Selecciona la opción I accept the terms of this license agreement para aceptar los términos de la licencia y haz clic en Next.
+
+22.jpg
+
+Confirma el directorio de instalación y haz clic en Next.
+
+23.jpg
+
+Tras finalizar la instalación haz clic sobre Next.
+
+24.jpg
+
+Desmarca la opción Create shortcuts in the Start-menu en caso de que no desees crear un atajo para el programa y haz clic en Next.
+
+25.jpg
+
+Haz clic en Done para cerrar el instalador.
+
+26.jpg
+
+¡Ahora, sí estamos listos! Puedes comenzar a utilizar SQL Power Architect.
+
+
+~ G:\Mi unidad\ptable\X-PowerArchitect_1.0.6_rev2\Bin\Architect>java -jar architect.jar   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+**********************************************************************************************
+03 Tablas
+En esta clase se aborda el modelado físico de bases de datos, donde se hace la transición de conceptos del modelo lógico a la implementación en tablas. Se explica que en el modelo físico se utilizan términos como "tablas" en lugar de "entidades", y "columnas" en lugar de "atributos".
+
+Se presenta el uso de Power Architect para crear una nueva tabla, donde se debe definir el nombre lógico de la tabla, que proviene del modelo lógico, y el nombre físico que se utilizará, como por ejemplo "Tb_CLIENTE". También se menciona la importancia de establecer la clave principal y se pueden agregar descripciones en el campo de "remarks" para detallar la función de la tabla.
+
+Finalmente, se indica que en la próxima clase se verá cómo agregar campos a la tabla creada.
+///////////////////////////////////////////////////////////////////////////////////
+04
+Creando tablas
+ Siguiente pregunta
+
+Ahora que Johanna comenzó a aprender que es un modelo físico del proyecto de una base de datos, ella está motivada a ponerse manos a la obra.
+
+De acuerdo con lo que aprendimos en las aulas, ¿Cuáles serían los pasos para la creación de la tabla del modelo físico dentro del software SQL Power Architect?
+
+Alternativa correta
+Hacer clic en New Table (o digitar la tecla T) y arrastrar dentro del área en la pantalla para diseñar la tabla y crear el nombre lógico (como lo vamos a implementar en la base de datos), el nombre físico (como lo referenciamos en el modelado) y una clave principal.
+
+
+Alternativa correta
+Hacer clic en New Table (o digitar la tecla T) y arrastrar dentro del área en la pantalla para diseñar la tabla y crear el nombre lógico (como lo referenciamos en el modelo), el nombre físico (como implementaremos la base de datos) y una clave foránea.
+
+
+Alternativa correta
+Hacer clic en New Table (o digitar la tecla T) y arrastrar dentro del área en la pantalla para diseñar la tabla y crear el nombre lógico (como lo vamos a implementar en la base de datos), el nombre físico (como lo referenciamos en el modelado) y una clave parcial.
+
+
+Alternativa correta
+Hacer clic en New Table (o digitar la tecla T) y arrastrar dentro del área en la pantalla para diseñar la tabla y crear el nombre lógico (como lo referenciamos en el modelo), el nombre físico (como implementaremos la base de datos) y una clave principal.
+
+
+Felicitaciones, El modo de crear una tabla en SQL Power Architect sigue exactamente este camino.
+*******************************************************************************************************
+05 Campos
+En esta clase se aborda el modelado físico de bases de datos, específicamente en la creación y configuración de una tabla de clientes. Se inicia mostrando cómo insertar columnas en la tabla, utilizando el código de cliente como ejemplo. Se destaca la importancia de definir el nombre lógico y físico de la columna, así como la selección de la clave principal.
+
+Se menciona que al establecer una columna como clave principal, no se permite que tenga valores nulos, lo cual es una restricción fundamental. También se discute la elección del tipo de dato, sugiriendo que el código de cliente podría ser un VARCHAR de 10 dígitos.
+
+Además, se enfatiza la importancia de documentar las columnas y sus características, ya que en un proyecto de base de datos pueden participar varios miembros del equipo. Esto ayuda a que todos comprendan mejor la estructura y el propósito de la base de datos. Al final de la clase, se menciona que en la próxima sesión se hablará sobre dominios.
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+ 06 Columnas en el modelo físico
+ Siguiente pregunta
+
+Martha comentó con Johanna sobre la existencia de las columnas dentro del modelo físico, que serán responsables por almacenar la información de las tablas, pero a Johanna le gustaría entender mejor de dónde surgieron las columnas y cuáles eran sus características.
+
+Con base en lo que aprendimos hasta aquí, escoge las alternativas que mejor describen las características correctas de las columnas:
+
+Alternativa correta
+Todas las columnas deben ser clasificadas como claves principales para que sea posible identificar cada ocurrencia dentro de las tablas.
+
+
+Alternativa correta
+En la construcción de las columnas vamos a determinar su tipo lo que determinará las características de los datos contenidos en cada columna.
+
+
+Determinar el tipo de cada columna será esencial en la construcción de nuestra base de datos para lograr identificar los datos contenidos en cada columna.
+
+Alternativa correta
+Las columnas van a almacenar las entidades que fueron determinadas en los modelos anteriores, bien como sus relaciones y atributos.
+
+
+Alternativa correta
+Las columnas representan los atributos o campos de las entidades (ahora denominadas tablas) dentro del modelo físico. Al adicionarlas vamos a escoger un nombre lógico y físico.
+
+
+Lo que era conocido como atributo o campo en el modelo lógico ahora será denominado columna en el modelo físico.
+
+¡Enhorabuena, has acertado!
+ Discutir en el Foro
+ Siguiente pregunta
+******************************************************************************************************
+ 07 Para saber más: opciones de software para la creación del MFD
+ Siguiente pregunta
+
+Durante este curso el instructor utilizará el software SQL Power Architect para la creación del modelo físico del proyecto, pero esta no es la única herramienta existente para que trabajemos en esta etapa del modelado. Presentaremos aquí otras opciones para que experimentes y aprendas un poco más sobre los otros softwares que pueden ser utilizados en este proceso.
+
+MySQL Workbench es una herramienta muy utilizada en el modelado de bases de datos. Se trata de un software bien completo que nos posibilita crear todos los procesos de modelado de banco de datos además de hacer alteraciones al mismo, que normalmente serían más trabajosas utilizando recursos-clave de modo que sea preciso menos tiempo y esfuerzo en estos procesos.
+
+Astah Profesional es otro software que abarca completamente todas las etapas del proceso de modelado de bases de datos. Este permite generar códigos a partir de los diagramas creados o hacer una ingeniería inversa en los códigos existentes.
+
+DBDesigner 4 posee una interfaz bien intuitiva lo que facilita su aplicación. Este es muy utilizado en las universidades durante el proceso de aprendizaje de modelado. Esta herramienta también puede ser utilizada en conjunto con MySQL.
+
+La elección del software va a depender mucho de tus preferencias y necesidades ya que la mayor parte de ellos poseen funcionalidades parecidas. La recomendación es utilizar un software que ya esté en el mercado hace algún tiempo y sea confiable, como todos estos ejemplos que mencionamos aquí. Te sugerimos que leas un poco más a fondo sobre el software que irás a escoger para trabajar antes de comenzar con tu proyecto, teniendo en cuenta las necesidades específicas de tu proyecto.
+*******************************************************************************************
+08 Haga lo que hicimos
+ Siguiente pregunta
+
+Llegó la hora de que sigas todos los pasos realizados por mí durante esta aula. En caso de que ya lo hayas hecho, excelente. Si aún no lo hiciste, es importante que ejecutes lo que fue desarrollado en los videos para poder continuar a la próxima aula.
+
+Ver opinión del instructor
+Opinión del instructor
+
+Continúa con tus estudios y, en caso de inquietudes, ¡No dudes en acudir a nuestro foro!
+***************************************************************************************************
+09 Lo que aprendimos
+ Siguiente pregunta
+
+Lo que aprendimos en esta aula:
+
+Instalar SQL Power Architect;
+Identificar el modelo físico;
+Construir tablas en el modelo físico;
+Construir columnas en el modelo físico;
+Reconocer otras herramientas de software para la creación del modelo físico.
+ Discutir en el Foro
+****************************************************************************************************
+***************************************************************************************************
+04. Tipos de datos, tablas y columnas
+01
+Dominio = es el tipo de dato Ej VARCHAR que son caracteres alfanuméricos(str los ceros a la izquierda los toma, si fuera numérico: no tomaría los ceros)
+En esta clase, se aborda el concepto de dominio en el contexto del modelado de bases de datos relacionales, específicamente en la creación de columnas para una tabla de clientes. Se explica que el dominio se refiere al tipo de datos que se utilizarán en cada columna.
+
+Se menciona el tipo de dato VARCHAR, que permite almacenar caracteres alfanuméricos y es útil para códigos de clientes que pueden comenzar con ceros, ya que los números enteros no conservarían esos ceros a la izquierda. Además, se presentan otros tipos de datos como BIGINT, BINARY, BIT, BLOB, BOOLEAN, CHAR, DATE, DECIMAL, FLOAT, INTEGER, NCHAR, NUMERIC, NVARCHAR, TIME y TIMESTAMP.
+
+Se destaca la diferencia entre CHAR y VARCHAR, donde CHAR requiere una longitud fija y VARCHAR permite una longitud variable. También se menciona la importancia de las claves principales (PK), que no aceptan valores nulos, contribuyendo así a la integridad de los datos en la base de datos.
+
+Finalmente, se anticipa que en la próxima clase se agregarán más campos a la tabla de clientes.
+
+Copiar texto de Luri al portapapeles
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+02
+Tipos de datos en el modelo físico
+ Siguiente pregunta
+
+Martha elogió bastante la evolución de Johanna y como ella viene desempeñándose realizando el modelado de bases de datos. Ahora, tras aprender qué es el modelado físico y cómo crear una tabla en SQL Power Architect, ella recibió la función de implementar el modelo físico del Club del Libro y, para ello, necesita traducir el modelo lógico al modelo físico.
+
+Para llenar junto a ella las tablas de nuestro modelo físico, necesitamos estar bien atentos a los tipos de datos y cómo queremos que estos sean futuramente almacenados en nuestra base de datos.
+
+Con base en lo que aprendimos hasta aquí, escoge las alternativas que mejor describen los tipos de datos y cómo pueden ser utilizados:
+
+Alternativa correta
+En un modelo físico, podemos utilizar el tipo INTEGER para describir una columna de DNI, visto que el DNI es un tipo de dato constituído por números.
+
+
+Alternativa correta
+En un modelo físico, podemos utilizar el tipo VARCHAR para describir una columna de código del cliente, visto que este tipo permite el uso de datos alfanuméricos, o sea, tanto números como letras.
+
+
+El tipo VARCHAR permite el uso de datos alfanuméricos, siendo muy común utilizarlos en casos como este.
+
+Alternativa correta
+En un modelo físico, podemos utilizar el tipo FLOAT para describir una columna de precio de un producto, visto que este tipo permite el uso de datos tanto en el formato entero como en el decimal.
+
+
+El tipo FLOAT permite el uso de datos tanto en el formato entero como en el decimal, siendo muy utilizado tanto para valores como para cantidades expresadas con valores decimales.
+
+Alternativa correta
+En un modelo físico, podemos utilizar tan solo el tipo DECIMAL para describir una columna de precio de un producto, visto que este es el tipo que permite el uso de datos en el formato decimal.
+
+
+¡Enhorabuena, has acertado!
+ Discutir en el Foro
+ Siguiente pregunta
+***************************************************************************************
+03
+Para saber más: otros tipos de datos
+ Siguiente pregunta
+
+Al desarrollar el modelo físico pasamos a especificar el dominio que cada columna de la tabla va a pertenecer, o sea, cuáles son los tipos de datos que cada campo irá a recibir. Los tipos de datos normalmente son definidos en categorías: Tipos numéricos, de fecha y de cadenas de caracteres, son las más conocidas.
+
+Entre los tipos de datos numéricos tenemos:
+
+Int almacena valores numéricos enteros.
+
+Float almacena valores numéricos aproximados con precisión de punto flotante.
+
+Decimal almacena valores numéricos con casas decimales, utilizando precisión.
+
+Entre los tipos de datos de cadenas de caracteres:
+
+Varchar almacena valores de string de tamaño variable de acuerdo con su límite.
+
+Char almacena valores de string de tamaño fijo.
+
+Text almacena valores de string de tamaño variable.
+
+Entre los tipos de datos de fecha tenemos:
+
+Date almacena apenas los valores de fecha.
+
+Time almacena apenas los valores de hora.
+
+Timestamp almacena valores de fecha y hora.
+
+Estos son tan solo algunos ejemplos de tipos de datos que pueden ser utilizados para definir el dominio de una columna. Este uso puede variar entre los diversos SGBDs.
+*********************************************************************************************
+04
+Tabla CLIENTE (hago click en la tabla y luego veo a la derecha los tools, con letra C -shorcut c)
+En esta clase, se abordó la creación de la tabla "CLIENTE" en un modelo de base de datos relacional. Se discutieron las columnas que componen esta tabla, incluyendo:
+
+Nombre: Tipo VARCHAR con una precisión de 100, no permite nulos.
+Teléfono: Tipo VARCHAR con una precisión de 12, no permite nulos.
+Email: Tipo VARCHAR con una precisión de 50, no permite nulos.
+Calle: Tipo VARCHAR con una precisión de 50, no permite nulos.
+Barrio: Tipo VARCHAR con una precisión de 50, no permite nulos.
+Ciudad: Tipo VARCHAR con una precisión de 50, no permite nulos.
+Estado: Tipo VARCHAR con una precisión de 2, no permite nulos.
+Se enfatizó que todos los campos son de tipo VARCHAR, excepto el código del cliente, que es la clave principal. Al final de la clase, se mostró el diagrama entidad-relación que representa la tabla y sus columnas.
+
+Copiar texto de Luri al portapapeles
+Limpiar conversación
+//////////////////////////////////////////////////////////////////////////////////////////////////
+05 Creando una tabla en el modelo físico
+ Siguiente pregunta
+
+El club del libro adicionó algunos productos además de los libros y pidió que Martha añadiera una tabla más al modelo físico. Cómo el proyecto ya está a mitad del camino, Martha solicitó que fuera detallada la información sobre cómo debería ser esta nueva tabla.
+
+Informaron que la tabla tendrá toda la información sobre los productos extra como el código del producto, que será generado por una secuencia de 20 números y letras, el nombre del producto y la cantidad del producto en inventario.
+
+Teniendo en cuenta lo que aprendimos durante el aula, ¿Cómo quedaría la clasificación de esa tabla y sus respectivas columnas, excluyendo por ahora las posibles relaciones, dentro de un modelo físico?
+
+Alternativa correta
+8.jpg
+
+
+Esta sería la forma correcta de representar la tabla de productos extras dentro del modelo físico. Las columnas “Cod_producto_extra”(PK) y “Nombre_producto_extra” son del tipo varchar, ya que este tipo permite el uso de datos alfanuméricos, o sea, tanto números como letras. La columna “Inventario_producto_extra” será del tipo integer pues se trata de la cantidad de productos en el inventario, que será representado por un número entero.
+
+Alternativa correta
+7.jpg
+
+
+Alternativa correta
+6.jpg
+
+
+Alternativa correta
+5.jpg
+
+
+¡Enhorabuena, has acertado!
+ Discutir en el Foro
+ Siguiente pregunta
+*************************************************************************************************************
+06
+Representando las entidades fuertes
+En esta clase, se abordó el proceso de creación de tablas para representar entidades fuertes en un modelo de base de datos relacional. Se inició con la tabla de clientes y luego se creó la tabla de editoriales, definiendo sus nombres lógicos y físicos, así como las claves principales y los tipos de datos para cada columna.
+
+Se discutieron varios campos que se añadieron a la tabla editorial, como el código de la editorial, nombre de contacto, email y números de teléfono, especificando cuáles de estos campos no admiten valores nulos. Se enfatizó la importancia de las claves principales y la integridad de los datos.
+
+Además, se introdujo la creación de la tabla de pedidos, donde se explicó que el código del pedido es una clave parcial y se definieron otros campos como fecha y valor, especificando el tipo de datos correspondiente. También se mencionó la creación de la tabla de items, aunque se decidió dejar las claves foráneas para una clase posterior.
+
+En resumen, la clase se centró en el modelado lógico de entidades fuertes, la definición de sus atributos y la importancia de las claves para mantener la integridad de los datos en una base de datos relacional.
+************************************************************************************************************
+07 Completando las tablas
+En esta clase, se aborda el proceso de completar tablas en un modelo de base de datos relacional, específicamente la tabla de libros (Tb_LIBRO) y otras entidades relacionadas. Se discuten los tipos de datos que se utilizarán para cada columna, como VARCHAR para el título y el autor, INTEGER para el año de publicación y el valor del libro, y se establece que ciertos campos no pueden aceptar valores nulos, como el valor del libro.
+
+Se menciona la importancia de las claves parciales en entidades débiles y se crean otras tablas, como la de inventario (Tb_INVENTARIO) y las tablas para personas naturales (Tb_PN) y personas jurídicas (Tb_PJ), definiendo los campos necesarios para cada una. Finalmente, se destaca que se dejarán las claves foráneas para ser definidas en una clase posterior, y se hace un repaso de las relaciones entre las diferentes entidades del modelo.
+
+***********************************************************************************************
+08 Haga lo que hicimos
+ Siguiente pregunta
+
+Llegó la hora de que sigas todos los pasos realizados por mí durante esta aula. En caso de que ya lo hayas hecho, excelente. Si aún no lo hiciste, es importante que ejecutes lo que fue desarrollado en los videos para poder continuar a la próxima aula.
+
+Ver opinión del instructor
+Opinión del instructor
+
+Continúa con tus estudios y, en caso de inquietudes, ¡No dudes en acudir a nuestro foro!
+********************************************************************************************
+09 Lo que aprendimos
+ Siguiente pregunta
+
+Lo que aprendimos en esta aula:
+
+Identificar los tipos de datos de las columnas;
+Conocer otros tipos de datos;
+Construir una tabla en el modelo físico;
+Construir una columna en el modelo físico.
+*************************************************************************************************
+05. Concluyendo el proyecto (Todavía no se generaron las claves foráneas, no preocuparse, importa sabér cuál será FK y luego se generará automáticamente)
+01 Tipos de relación
+En esta clase, se aborda la fase final del modelado físico de una base de datos, donde se establecen las relaciones entre las entidades. Martha explica que, aunque no se hayan creado claves foráneas de forma manual, estas se pueden establecer automáticamente al determinar cuál será la clave utilizada como clave foránea.
+
+Se discuten dos tipos de relaciones: las no identificadas, que se utilizan cuando las entidades débiles tienen claves parciales, y las identificadas, que se emplean cuando no hay claves parciales. A través de ejemplos prácticos, se muestra cómo crear relaciones entre las tablas, como entre clientes y pedidos, y cómo manejar las cardinalidades.
+
+Además, se menciona la importancia de especificar la cardinalidad en el modelo físico, que puede variar entre 0 a 1, 1 a N, entre otros. La clase concluye con la promesa de abordar la nomenclatura de la cardinalidad en la próxima sesión.
+
+* Selecciono relación NO IDENTIFICADORA, linea punteada de Cliente(fuerte), click en PK y luego click en Pedido(cualquier parte) //
+ Idem Editorial(1.1) a Libro-posee clave parcial(cardinalidad mínima=0.N=cardinalidad maxima-muchos)
+ITEMS, no posee clave parcial luego elijo realción IDENTIFICADORA,	 línea llena. Hago click en PEDIDO PK y luego en la tabla ITEMS
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+02
+Identificadora vs. No Identificadora
+ Siguiente pregunta
+
+Martha inició la creación de las relaciones entre las tablas, determinando las relaciones identificadoras y no identificadoras, pero algunas personas del equipo aún no entendieron muy bien la diferencia entre estos dos tipos de relaciones.
+
+Con base en lo que aprendimos durante el aula, marca la alternativa que describe la diferencia entre estos dos tipos de relaciones:
+
+Alternativa correta
+La relación identificadora es aquella en que una ocurrencia de la entidad débil necesita estar asociada a exactamente una ocurrencia de la entidad fuerte y no puede existir sin ella. Es utilizada para representar una clave principal foránea, en cuanto a la relación no identificadora, cada ocurrencia de la entidad débil puede ser identificada sin la necesidad de saber a cuál ocurrencia de la entidad fuerte está asociada. En este caso, esta relación es utilizada solamente para claves foráneas.
+
+
+Estas son las diferencias entre estos dos tipos de relaciones.
+
+Alternativa correta
+La relación identificadora es aquella en que una ocurrencia de la entidad débil necesita estar asociada a exactamente una ocurrencia de la entidad fuerte y no puede existir sin ella. En cuanto a la relación no identificadora, cada ocurrencia de la entidad débil puede ser identificada con la necesidad de saber a cuál ocurrencia de la entidad fuerte está asociada. Es utilizada para representar apenas claves foráneas.
+
+
+Alternativa correta
+La relación identificadora es aquella en que una ocurrencia de la entidad débil necesita estar asociada a exactamente una ocurrencia de la entidad fuerte y no puede existir sin ella. En cuanto a la relación no identificadora, cada ocurrencia de la entidad débil puede ser identificada sin la necesidad de saber a cuál ocurrencia de la entidad fuerte está asociada. Los dos tipos de relaciones son utilizados para generar claves principales foráneas.
+
+
+Alternativa correta
+La relación identificadora es aquella en que una ocurrencia de la entidad débil necesita estar asociada a exactamente una ocurrencia de la entidad fuerte y no puede existir sin ella. Es utilizada para representar apenas claves foráneas. En cuanto a la relación no identificadora, cada ocurrencia de la entidad débil puede ser identificada sin la necesidad de saber a cuál ocurrencia de la entidad fuerte está asociada. En este caso, esta relación es utilizada para representar una clave principal foránea.
+
+
+¡Enhorabuena, has acertado!
+ Discutir en el Foro
+ Siguiente pregunta
+✅ Respuesta correcta:
+
+La relación identificadora es aquella en que una ocurrencia de la entidad débil necesita estar asociada a exactamente una ocurrencia de la entidad fuerte y no puede existir sin ella. Es utilizada para representar una clave principal foránea, en cuanto a la relación no identificadora, cada ocurrencia de la entidad débil puede ser identificada sin la necesidad de saber a cuál ocurrencia de la entidad fuerte está asociada. En este caso, esta relación es utilizada solamente para claves foráneas.
+
+Explicación:
+Relación identificadora:
+
+Ocurre entre una entidad fuerte y una entidad débil.
+
+La entidad débil no puede existir por sí sola y depende de la entidad fuerte para ser identificada.
+
+La clave foránea también forma parte de la clave primaria de la entidad débil (por eso se llama "identificadora").
+
+Relación no identificadora:
+
+Las entidades relacionadas pueden existir independientemente.
+
+La clave foránea no forma parte de la clave primaria, sino que es solo una referencia.
+
+Se usa para mantener la integridad referencial, pero no para identificación única.
+
+¿Quieres que te muestre un ejemplo visual de cada tipo con diagramas entidad-relación?
+*****************************************************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

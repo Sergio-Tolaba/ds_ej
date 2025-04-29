@@ -205,6 +205,12 @@ En el siguiente documento encontrarás el resumen de la entrevista que realizó 
 04
 Entrevista con los directores
 Análisis del resumen descargado en db= Entrevista+Club+del+libro+-+Resumen.docx (haremos la abstracción la info que necesitamos para modelar la db)
+
+Convertir .docx a md // En G:/'Mi Unidad'/ptabe/pandoc
+cmd
+pandoc archivo.docx -o archivo.md
+
+
 En esta clase, se aborda la recolección de requisitos para el modelado de una base de datos en el contexto del Club del Libro. Martha, tras reunirse con la directiva, elaboró un informe que detalla la información necesaria para la base de datos.
 
 Se identifican dos tipos de clientes: personas naturales (individuos) y personas jurídicas (empresas), con diferentes datos requeridos para cada uno. Para las personas naturales, se necesita el registro único tributario y el documento nacional de identificación, mientras que para las personas jurídicas, se requiere el número de identificación tributaria y el registro único de empresa. Además, se deben almacenar el nombre, dirección, teléfono y email de los clientes.
@@ -397,6 +403,7 @@ Diferenciar las entidades fuertes de las entidades débiles.
 Representar las entidades en diagrams.net.
 ****************************************************************************************************+
 04. Diagrama Entidad-Relación (DER) Las relaciones se representan gráficamente con un ROMBO y muestra una acción  es un verbo(Entidad es un sustantivo)
+01 Tipos de relaciones
 En esta clase, se aborda la importancia de entender las reglas del negocio al modelar una base de datos, específicamente en el contexto de un e-commerce como el Club del Libro. Se enfatiza la necesidad de que el equipo de modelado se alinee con el cliente para comprender cómo funciona el negocio y cómo se realizarán las transacciones.
 
 Se introduce el concepto de relaciones entre entidades en un diagrama entidad-relación, que se representan mediante un rombo. Se explican diferentes tipos de relaciones:
@@ -405,9 +412,323 @@ Relación binaria: conecta dos entidades.
 Relación ternaria: involucra tres entidades.
 Relación N-aria: incluye más de tres entidades.
 Finalmente, se menciona que se explorará el concepto de cardinalidad en las próximas clases, que se refiere a cómo las entidades se relacionan entre sí.
+********************************************************
+02
+Relaciones = Agregamos el ROMBO
+
+~ https://app.diagrams.net/?src=about#HSergio-Tolaba%2Fds_ej%2Fmain%2Fdb%2Fmodelo.drawio#%7B%22pageId%22%3A%22XqcYxNgyNjFQ2hBGpFSJ%22%7D
+
+En esta clase, se aborda el tema de las relaciones en un diagrama entidad-relación. Se comienza explicando que, una vez que se tienen las entidades definidas, es fundamental establecer cómo se relacionan entre sí. Se utiliza el ejemplo de un cliente y un pedido, donde se menciona que la relación puede ser de compra.
+
+Se muestra cómo crear esta relación en una herramienta de diagramación, arrastrando las entidades hacia un rombo que representa la relación. Luego, se introduce el concepto de relaciones en el ámbito de la salud, donde se ejemplifica cómo un médico puede atender a múltiples pacientes y viceversa.
+
+Se menciona la importancia de la cardinalidad, que se refiere a la conectividad entre las entidades, y se anticipa que en la próxima clase se profundizará en los diferentes tipos de cardinalidad y cómo reflejarlos en el diagrama.
+/////////////////////////////////////////////////////////////////////////////////////////////////
+03
+Clasificando las relaciones
+ Siguiente pregunta
+
+Después de identificar nuestras entidades, el equipo de Martha necesita entender cómo se van a relacionar. La relación entre entidades se forma a partir de una asociación entre dos o más entidades. Esta asociación se crea utilizando instrucciones de combinación para recuperar datos. Para llevar a cabo la asociación entre las entidades, Martha y su equipo necesitan identificar el grado de estas relaciones.
+
+Escoge la alternativa que describe cada grado de relación existente.
+
+Alternativa correta
+Grado ternario tiene tres entidades participando de una relación. El grado binario presenta dos o más entidades. El grado N-ario cuatro o más entidades.
 
 
+Alternativa correta
+El grado binario ocurre cuando dos entidades participan de una relación, el grado ternario cuando tres entidades participan de una relación y el grado N-ario cuando cuatro o más entidades participan de una relación.
 
+
+Existen tres tipos de grado de relación: Binario, Ternario y N-ario. El grado binario - el más común entre todos - ocurre cuando la relación involucra a dos entidades. El ternario describe la relación entre tres entidades y el N-ario entre cuatro o más entidades al mismo tiempo.
+
+Alternativa correta
+El grado ternario ocurre con dos entidades, el binario con cuatro o más entidades y el N-ario con dos entidades en una relación.
+
+
+Alternativa correta
+Solo existen dos tipos de grado de relación: El binario, cuando dos entidades participan de una relación; ya el N-ario, cuando tres o más entidades participan de una relación.
+*********************************************************************************************************+
+04
+Tipos de cardinalidad
+En esta clase, se abordó el concepto de cardinalidad en el contexto de un diagrama entidad-relación. Martha explicó a su equipo que existen varios tipos de cardinalidad:
+
+1 a 1: Un departamento es gestionado por un solo colaborador.
+1 a N: Un departamento puede tener varios colaboradores trabajando en él.
+0 a 1: Un departamento puede no tener colaboradores asignados.
+0 a N: Un departamento puede tener varios colaboradores, pero no necesariamente.
+M a N: En un club de libros, varios pedidos pueden contener varios libros, lo que representa una relación de muchos a muchos.
+Martha utilizó ejemplos prácticos para ilustrar cada tipo de cardinalidad, ayudando al equipo a comprender mejor cómo se relacionan las entidades en un diagrama entidad-relación. Al final, el equipo quedó motivado para continuar trabajando en su diagrama.
+M se refiere a una tabla y que un registro está relacionado a muchos registro de otra tabla(M) y viceversa. Un registro de N está relacionado a muchos registros de M Ej Un Estudiante puede inscribirse en varios cursos. Un curso tiene inscriptos varios estudiantes
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+05
+Diferenciando los tipos de cardinalidad
+ Siguiente pregunta
+
+Al crear las relaciones en la herramienta diagrams.net, Pedro notó la necesidad de identificar la cardinalidad. Pero este aún necesita entender cómo utilizar cada tipo de cardinalidad.
+
+Ayuda a Pedro seleccionando las alternativas que representan los tipos de cardinalidad.
+
+Alternativa correta
+La cardinalidad de muchos a muchos (N:N) tiene lugar cuando más de una ocurrencia de la entidad A se relaciona con más de una ocurrencia de la entidad B. Ya la cardinalidad de uno a uno (1:1) se presenta cuando cada ocurrencia de la entidad A se relaciona con tan solo una ocurrencia de la entidad B.
+
+
+Un ejemplo de la cardinalidad (N:N) es la relación Cliente/Producto, en la cual la persona puede comprar varios productos y un producto puede ser comprado por varias personas. Ya la cardinalidad (1:1) es la relación estudiante/ID, donde cada estudiante posee su ID y cada ID es atribuido a tan solo un(a) estudiante.
+
+Alternativa correta
+La cardinalidad de muchos a muchos (N:N) sucede cuando solamente dos entidades se relacionan con otras dos entidades. Ya la cardinalidad de uno a muchos (1:N) se presenta cuando cada ocurrencia de la entidad A se relaciona con dos ocurrencias de la entidad B.
+
+
+Alternativa correta
+La cardinalidad de uno a uno (1:1) está presente cuando cada ocurrencia de la entidad A está relacionada únicamente con una ocurrencia de la entidad B. Esta cardinalidad es la más común en el mundo real y en el mundo de los negocios y es la más utilizada en la solución del modelo de datos.
+
+
+Alternativa correta
+La cardinalidad de uno a muchos (1:N) ocurre cuando cada ocurrencia de la entidad A se relaciona con más de una ocurrencia de la entidad B. Esta cardinalidad es común en el mundo real y en el mundo empresarial y es la más utilizada en la solución del modelo de datos.
+
+
+Un ejemplo de esta cardinalidad es la relación Cliente/Pedido, en la cual cada cliente puede tener varios pedidos a su nombre, pero un pedido pertenece solamente a un(a) único(a) cliente.
+*******************************************************************************
+06
+Representando las relaciones
+En esta clase, se aborda el tema del Diagrama Entidad-Relación, enfocándose en cómo establecer las relaciones entre las entidades y definir la cardinalidad mínima y máxima de dichas relaciones. Se utiliza el ejemplo de una casa para ilustrar estos conceptos, donde se explica que una casa puede tener un propietario (cardinalidad mínima de 1) y puede estar deshabitada (cardinalidad mínima de 0 para los habitantes).
+
+Se discute la relación entre clientes y pedidos, donde un cliente debe existir para que haya un pedido (cardinalidad mínima de 1) y un cliente puede realizar múltiples pedidos (cardinalidad máxima de N). También se analiza la relación entre pedidos y libros, donde un pedido debe contener al menos un libro (cardinalidad mínima de 1) y puede contener muchos libros (cardinalidad máxima de N).
+
+Además, se menciona la relación entre libros y editoriales, donde un libro pertenece a una única editorial (cardinalidad mínima y máxima de 1) y una editorial puede tener múltiples libros (cardinalidad máxima de N). Finalmente, se introduce la relación entre inventario y libros, donde un libro debe existir en el inventario (cardinalidad mínima de 1) y puede haber múltiples libros en stock (cardinalidad máxima de N).
+
+La clase concluye con la necesidad de entender mejor las relaciones de muchos a muchos, especialmente entre pedidos y libros.
+Un libro es exclusivo de una Editorial, es decir pertenece solo a una Editorial (es dueña de los derechos de autor= no puede haber igual título de != editoriales)
+******************************************************************************************
+ 07 Para saber más: restricción de participación
+ Siguiente pregunta
+
+De acuerdo con las referencias utilizadas para realizar tus estudios, puedes encontrar otra forma de representar la cardinalidad mínima, conocida como restricción de participación o dependencia de existencia.
+
+La restricción de participación es utilizada para especificar si la existencia de la entidad depende de la asociación a otra entidad, o sea, depende de la relación. Existen dos tipos de restricción de participación: restricción total y restricción parcial.
+
+La restricción total ocurre cuando todas las instancias de una entidad X necesitan estar obligatoriamente relacionadas a alguna instancia de la entidad Y. Por ejemplo: Si en las reglas de negocio del proyecto se estableció que todo(a) colaborador(a) necesita estar asociado a un departamento para que la persona pueda trabajar en la empresa, consideramos que la restricción de participación entre colaborador(a) y el departamento es total, pues, él/ella necesita estar trabajando en, como mínimo, un departamento.
+
+Ya la restricción parcial ocurre cuando todas las instancias de una entidad X no necesitan estar obligatoriamente relacionadas a cualquier instancia de la entidad Y. Por ejemplo: Todo departamento necesita ser gestionado por un(a) colaborador(a), pero no todo colaborador(a) necesita ser gerente de un departamento. Entonces, consideramos que la restricción de participación entre la relación referente a la gestión de un departamento por parte de un(a) colaborador(a) es una restricción parcial, ya que no todos los colaboradores van a gestionar un solo departamento.
+**********************************************************************
+08 Entidades asociativas
+En esta clase, se aborda el concepto de entidades asociativas en el contexto de un diagrama entidad-relación. Se explica que, cuando se tiene una relación de muchos a muchos, como en el caso de pedidos y libros, puede ser confuso entender cómo funcionan estas relaciones. Para resolver esto, se introduce la idea de crear una entidad asociativa.
+
+Se presenta el proceso de crear esta entidad asociativa, que en este caso se denomina "items". Esta entidad permite organizar de manera más eficiente la relación entre pedidos y libros, concentrando ambos en una sola entidad. Se menciona que en la entidad "items" se pueden tener uno o más pedidos y uno o más libros, estableciendo así la cardinalidad de 1 a N.
+
+Finalmente, se destaca la importancia de esta entidad asociativa para estructurar mejor la base de datos del Club del Libro, preparando el terreno para agregar más detalles en las próximas clases.
+
+* En relaciones 1.N(Uno a Muchos) En pedidos puedo tener uno o muchos pedidos. En libros puedo tener uno o Muchos libros=>Entidad Asociativa con Items (para que exista items debe estar esta relación 1.N
+******************************************************************
+ 09 Para saber más: resolución de la relación muchos a muchos
+ Siguiente pregunta
+
+La interpretación de una relación de muchos a muchos puede variar en el análisis del mini mundo que estamos modelando. Entretanto, podemos conciliar estos casos por medio de lo que conocemos como solución de la relación de muchos a muchos.
+
+Todas las relaciones de muchos a muchos pueden entenderse como una entidad. Estas entidades se denominan asociativas, pues representan un hecho, una relación de muchos a muchos.
+
+Las entidades asociativas nos ayudan a organizar y a dejar de forma más explicativa lo que sucede dentro de una relación de muchos a muchos. Por ejemplo, cuando tenemos 2 entidades con relaciones N:M, con pedidos y piezas de una ensambladora de carros:
+
+1.jpg
+
+Un pedido podría contener varias piezas y una pieza podría estar incluída en varios pedidos diferentes.
+
+2.jpg
+
+Cuando tenemos una relación de este tipo, en la cual todas las instancias se relacionan, el concepto de atributo clave no será aplicado, ya que podemos tener varias instancias con el mismo valor. Al crear una entidad asociativa entre esta relación, generaremos dos nuevas relaciones de uno a muchos (1:N), y la entidad asociativa será la única que recibirá varias instancias en la relación:
+
+3.jpg
+
+En la nueva relación creada entre pedidos e items la cardinalidad será representada de la siguiente forma: Un pedido puede estar relacionado a varios items, pero un item solo puede estar relacionado a un pedido. Ya, la relación entre piezas e items, la cardinalidad será representada de la siguiente forma: Una pieza puede estar relacionada a varios items, pero un item solo puede estar relacionado a una pieza.
+
+Así, obtenemos que la relación entre pedidos e items es N:1 y la relación entre items y piezas es 1:N, y la entidad asociativa items es el intermediario entre las entidades pedido y piezas.
+*************************************************************************
+10 Haga lo que hicimos en aula
+ Siguiente pregunta
+
+Llegó la hora de que sigas todos los pasos realizados por mí durante las video-aulas. Si ya lo hiciste, ¡Te felicito! Si no lo has hecho, recuerda que para poder avanzar a la siguiente aula debes reproducir lo que aprendiste hasta aquí.
+
+Durante el aula 3, representaste y clasificaste las entidades de un proyecto personal o de una situación de tu día a día. Ahora, utiliza este proyecto para diseñar, en diagrams.net, las relaciones existentes entre dichas entidades y determinar el grado de cada relación.
+
+Ver opinión del instructor
+Opinión del instructor
+
+Continúa con tus estudios, y en caso de inquietudes, no dudes en acudir a nuestro foro.
+****************************************************************************************
+11 Lo que aprendimos
+ Siguiente pregunta
+
+Lo que aprendimos en esta aula:
+
+Identificar los tipos de relación.
+Determinar el grado de una relación.
+Reconocer los tipos de cardinalidad.
+Representar relaciones en el DER.
+**********************************************************************************************************+
+***********************************************************************************************************
+05. Atributos = características de cada una de las Entidades(5)
+01
+Qué son los atributos
+En esta clase, se aborda el concepto de atributos en el modelado de bases de datos. Se explica que los atributos son las características que definen a cada entidad. Para que una entidad exista, debe tener al menos un atributo. Se utilizan ejemplos del Club del Libro para ilustrar cómo se identifican los atributos de los clientes, como si son personas naturales o jurídicas, y se mencionan atributos específicos como el RUT, DNI, NIT, nombre, dirección, teléfono y e-mail.
+
+Además, se discuten los atributos de los libros, que incluyen el título, categoría, ISBN, año de publicación, valor y casa editorial. Se enfatiza la importancia de verificar la disponibilidad de los libros en el inventario antes de realizar una compra. Finalmente, se muestra cómo agregar un atributo a un diagrama de entidad-relación utilizando una herramienta de modelado.
+* Inventario: acá la cardinalidad=Cómo se relacionan las entidades en este caso Libro e Inventario (0.1)=>Puede haber 0 libros en el inventario y para el club del libro 1 sólo inventario (e-commerce centraliza sus operaciones en un sólo inventario)
+* Clientes=> atributo Persona física (DNI y CUIL relac dependencia-CUIT autónomo-CDI extranjero) o Persona Jurídica(CUIT)=>nombre,Razón + Dirección + Telef + correo
+* Libros=>Título,categoría, ISBN(Int' standard book number),año publicación, valor, casa editorial, author
+* Editorial=> Nombre,telefx2 max, nombre del contacto, e-mail
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+02
+Identificando los tipos de atributos
+ Siguiente pregunta
+
+Tras identificar las entidades y sus relaciones, es necesario relacionar las características de cada entidad, conocidas como atributos. Para ello, vamos a utilizar el mismo escenario ficticio del aula 3, en el cual una floristería nos contrató porque necesita tener un sistema para el control de ventas.
+
+Inicialmente, será almacenada la información de cada cliente, tal como: Nombre, dirección, fecha de nacimiento y edad. De cada producto almacenaremos la descripción, la cantidad en inventario y el precio. Adicionalmente, la floristería también tiene colaboradores(as) con nombre, dirección, salario y cargo.
+
+Escoge la alternativa que indica cuáles son los atributos presentes en el proyecto de la floristería.
+
+Alternativa correta
+Los atributos de cliente son: nombre, dirección, fecha de nacimiento y edad. Los de producto son descripción, cantidad en inventario y precio. Y los de colaborador(a) son nombre, dirección, salario, cliente y cargo.
+
+
+Alternativa correta
+Los atributos de cliente son nombre, dirección y edad. Los de producto son descripción, cantidad en inventario y precio. Los del colaborador son nombre, dirección, salario y cargo.
+
+
+Alternativa correta
+Los atributos de cliente son nombre, dirección, fecha de nacimiento y edad. Los de producto son descripción, cantidad en inventario y precio. Los del colaborador son nombre, dirección, salario y cargo.
+
+
+Los atributos son todos los campos que identificamos como características y que podemos utilizar para describir a la entidad.
+
+Alternativa correta
+Los atributos del cliente son nombre, dirección, fecha de nacimiento y edad. Los del colaborador son nombre, dirección, salario y cargo. La entidad producto no posee atributos.
+*************************************************************************************************
+03
+Tipos de atributo, el más importante es el Atributo clave Ej CUIT
+En esta clase se aborda el concepto de atributos en el modelado de bases de datos, diferenciando entre dos tipos: atributos atómicos y atributos de multivalor. Los atributos atómicos tienen un único valor, mientras que los atributos de multivalor pueden presentar más de un valor, como en el caso de direcciones o números de teléfono.
+
+Se menciona la importancia de organizar los atributos de forma individual, evitando el uso de atributos multivalor cuando no son necesarios. Además, se introducen los atributos derivados, que son aquellos que se pueden descomponer en subatributos, como una dirección que puede incluir calle, barrio, ciudad y estado.
+
+Finalmente, se hace referencia a los atributos clave, que son fundamentales para identificar de manera única a una entidad, y se destaca que estos atributos se diferencian visualmente al estar subrayados. Se anticipa que en la próxima clase se profundizará en cómo manejar estos atributos clave.
+*******************************************************************************************+	
+ 04 Para saber más: diferentes tipos de atributos
+ Siguiente pregunta
+
+Los atributos describen las propiedades de las entidades. Por ejemplo, la entidad persona puede tener como atributos: Nombre, fecha de nacimiento, edad, dirección, etc. Al igual que las entidades, también existen algunos tipos de atributo. Estos son:
+
+Atributo simple
+
+Es un tipo de atributo indivisible, o sea, es un atributo atómico. Un ejemplo de este tipo es el atributo DNI, pues este no puede ser dividido en partes menores para formar otros atributos.
+
+Atributo compuesto
+
+Puede ser dividido en partes menores que representan otros atributos, como por ejemplo dirección. Esta puede ser subdividida en atributos menores, como: ciudad, estado, calle, código postal, etc.
+
+Atributo multivalor
+
+Es aquel que puede tener uno o N (varios) valores asociados a él. Por ejemplo: El atributo teléfono de un cliente. Este puede tener uno o varios números de teléfono.
+
+Atributo derivado y almacenado
+
+Los atributos derivados dependen de otro atributo o incluso de otra entidad para existir, como, edad y fecha de nacimiento. Para descubrir la edad de una persona, necesitamos de su fecha de nacimiento. Entonces, consideramos el atributo edad como derivado del atributo fecha de nacimiento, que también se conoce como atributo almacenado.
+
+Atributo clave
+
+Es utilizado para identificar de forma única una entidad, o sea, los valores asociados a este atributo son distintos entre el conjunto de entidades. Como ejemplo, podemos utilizar el Código del Producto. Este es único y puede ser utilizado como atributo clave, dado que cada producto recibe un código en particular.
+******************************************************************************************
+05 Atributos en el modelo
+En esta clase, se aborda el concepto de atributos en el modelado de bases de datos, específicamente en el contexto de entidades como clientes, pedidos, libros y editoriales. Se discute la importancia de los atributos de especialización, que permiten diferenciar entre personas naturales y jurídicas, utilizando un triángulo para representarlos en un diagrama.
+
+Se mencionan los atributos específicos que se deben recolectar para cada tipo de entidad: para personas naturales se requieren el RUT y el DNI, mientras que para personas jurídicas se necesita el NIT y el RUES. También se introducen atributos para pedidos, como la fecha y el valor, y se habla de la necesidad de verificar la disponibilidad de libros en inventario, añadiendo un atributo de cantidad.
+
+Además, se detallan los atributos de los libros, que incluyen título, categoría, ISBN, año de publicación, valor, casa editorial y autor. En el caso de las editoriales, se mencionan atributos como el contacto, número de teléfono (con la posibilidad de tener dos) y email. Finalmente, se plantea la necesidad de discutir los atributos clave que evitan la repetición de registros en las tablas, lo cual se abordará en la próxima clase.	
+* Cómo hacemos para que no se duplique un pedido de un libro o que no ser dupliquen registros en nuestras tablas?
+**************************************************************************************************+
+06 Para saber más: clave foránea
+ Siguiente pregunta
+
+Como estudiamos en las últimas aulas, la entidad débil acaba recibiendo la clave principal de la entidad fuerte con la cual está asociada para componer la clave parcial.
+
+Como sabemos, la entidad débil no posee la clave principal. Por este motivo, podemos tener atributos identificadores propios de la entidad débil que van a componer esta clave parcial. Adicionalmente, tenemos la clave principal de la entidad fuerte, que se desplaza hacia la entidad débil.
+
+A esta clave que parte desde la entidad fuerte y llega a la entidad débil damos el nombre de clave foránea. Podríamos hacer una analogía con la palabra foránea, ya que ella originalmente pertenece a otra entidad, y viaja hasta la entidad de destino.
+********************************************************************************************************+
+07 Representando atributos en el DER
+En esta clase, se abordó la importancia de los atributos en el diagrama entidad-relación (DER) y cómo representan la integridad de los datos en una base de datos relacional. Se explicó que un atributo clave principal es aquel que no puede repetirse ni ser nulo dentro de una entidad, y solo las entidades fuertes pueden tener una clave principal.
+
+Se tomaron como ejemplos las entidades "cliente" y "editorial", donde se propuso crear un atributo adicional llamado "código cliente" y "código editorial" para servir como claves principales. También se discutió la relación entre las entidades débiles, como "libro" y "pedido", y cómo se deben manejar las claves parciales, como el "código de libro" que depende del "código editorial".
+
+Finalmente, se enfatizó la necesidad de organizar todos los objetos del modelo de manera adecuada y se invitó a los estudiantes a compartir sus modelos en el foro para recibir retroalimentación de sus compañeros.
+* Clave Primaria o Primary Key: Evita que su valor se repita, es única | No puede ser Nulo | Sólo las Entidades fuertes posee dicho PK
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 08 Colocando la clave principal
+ Siguiente pregunta
+
+Martha le explicó a Pedro que la clave principal se refiere a uno o más campos cuyos valores, considerando la combinación de valores en caso de más de un campo, nunca se repiten en la misma tabla. Por ello, puede ser usada como un índice de referencia para crear relaciones con las demás tablas del banco de datos.
+
+Con base en lo que estudiamos, selecciona las alternativas que describen las características de una clave principal.
+
+Alternativa correta
+No puede haber dos ocurrencias de una misma entidad con el mismo contenido en la clave principal.
+
+
+La clave principal necesita ser única para que sea posible utilizarla como referencia con las demás tablas del banco de datos.
+
+Alternativa correta
+Existen varias claves principales dentro de cada tabla para lograr identificar mejor las relaciones.
+
+
+Alternativa correta
+La clave principal puede asumir el valor nulo desde que el proyecto defina que la participación de la entidad en la relación asociada no es total.
+
+
+Alternativa correta
+La clave principal no puede ser compuesta por un atributo opcional, o sea, un atributo que acepte valores nulos.
+
+
+Los atributos que aceptan valores nulos no pueden hacer parte de una clave principal, ya que esta clave sirve como un identificador dentro del proyecto.
+*****************************************************************************************************************************+
+09 Haga lo que hicimos en aula
+ Siguiente pregunta
+
+Llegó la hora de que sigas todos los pasos realizados por mí durante las video aulas. Si ya lo hiciste, ¡Te felicito! Si no lo has hecho, recuerda que para poder avanzar a la siguiente aula debes reproducir lo que aprendiste hasta aquí.
+
+Durante a aula 4, representaste las relaciones existentes de un proyecto personal o de una situación de tu día a día y determinaste el grado de cada relación. Ahora, utiliza este proyecto para representar los atributos de las entidades existentes utilizando diagrams.net.
+
+Ver opinión del instructor
+Opinión del instructor
+
+Continúa con tus estudios, explora nuevas posibilidades, piensa en nuevas aplicaciones, y recuerda compartir tus avances en el foro. ¡Éxitos!
+
+ Discutir en el Foro
+ Siguiente pregu
+*******************************************************************************************+
+ 10 Lo que aprendimos
+ Siguiente pregunta
+
+Lo que aprendimos en esta aula:
+
+Identificar los tipos de atributos.
+Representar los atributos en diagrams.net.
+*******************************************************************************+
+11 Conclusión
+En esta clase, se abordaron los conceptos fundamentales del modelado de bases de datos, centrándose en entidades, relaciones y atributos. Se destacó la importancia de realizar un modelaje antes de implementarlo en un sistema de gestión de bases de datos.
+
+Entidades: Se explicaron las entidades fuertes, representadas por un cuadrado simple, y las entidades débiles, que se representan con un cuadrado doble. Es importante notar que una entidad débil no puede existir sin una entidad fuerte que la anteceda.
+
+Relaciones: Se introdujo el concepto de relaciones, que se representan mediante un rombo, y cómo estas establecen vínculos entre las entidades.
+
+Entidades asociativas: Se mencionó la necesidad de crear entidades asociativas cuando se tiene una relación de muchos a muchos.
+
+Atributos: Se discutieron diferentes tipos de atributos, incluyendo:
+
+Atributos derivados: Que se desprenden de un atributo principal, como múltiples números de teléfono o direcciones.
+Atributos especializados: Que permiten subdividir un atributo según la situación, como distinguir entre persona natural y persona jurídica.
+Atributos clave: Que son únicos, no pueden ser nulos y solo se establecen en entidades fuertes.
+Finalmente, se animó a los estudiantes a compartir su progreso en el foro del curso y en redes sociales, fomentando el aprendizaje del modelaje de bases de datos.
+*****************************************************************************************************+
+	
 	
 
 
